@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "thumb": "p-1.jpg",
+        "thumbLink": "project-details",
+        "title": "Machine Automation",
+        "category": "Automation"
+    },
+    {
+        "id": 2,
+        "thumb": "p-2.jpg",
+        "thumbLink": "project-details",
+        "title":  "Blockchain Development",
+        "category": "Blockchain"
+    },
+    {
+        "id": 3,
+        "thumb": "p-3.jpg",
+        "thumbLink": "project-details",
+        "title":  "AI Automation",
+        "category": "Automation"
+    },
+    {
+        "id": 4,
+        "thumb": "p-4.jpg",
+        "thumbLink": "project-details",
+        "title":  "Vector Creator",
+        "category": "Technology"
+    },
+    {
+        "id": 5,
+        "thumb": "p-5.jpg",
+        "thumbLink": "project-details",
+        "title":  "NFT Creator",
+        "category": "NFT"
+    },
+    {
+        "id": 6,
+        "thumb": "p-6.jpg",
+        "thumbLink": "project-details",
+        "title":  "Data Creators",
+        "category": "Technology"
+    },
+    {
+        "id": 7,
+        "thumb": "p-7.jpg",
+        "thumbLink": "project-details",
+        "title":  "Data Creators",
+        "category": "Technology"
+    },
+    {
+        "id": 8,
+        "thumb": "p-8.jpg",
+        "thumbLink": "project-details",
+        "title":  "Data Creators",
+        "category": "Technology"
+    }
+]

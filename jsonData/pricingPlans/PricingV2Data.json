@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "sub_title": "Starter",
+    "title": "Essential Services",
+    "price": {
+      "currency": "$",
+      "price": "499",
+      "under_dot": "99",
+      "price_desc": "/project"
+    },
+    "list": [
+      {
+        "icon": "fa-light fa-check",
+        "text": "Basic Website (5 pages)"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Logo Design Package"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Basic SEO Setup"
+      },
+      {
+        "icon": "fa-thin fa-xmark",
+        "text": "E-commerce Integration"
+      },
+      {
+        "icon": "fa-thin fa-xmark",
+        "text": "Animation Services"
+      },
+      {
+        "icon": "fa-thin fa-xmark",
+        "text": "Mobile App Development"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sub_title": "Professional",
+    "title": "Business Growth",
+    "price": {
+      "currency": "$",
+      "price": "999",
+      "under_dot": "99",
+      "price_desc": "/project"
+    },
+    "list": [
+      {
+        "icon": "fa-light fa-check",
+        "text": "Advanced Website (10+ pages)"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Complete Brand Identity"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "E-commerce Store Setup"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Digital Marketing Strategy"
+      },
+      {
+        "icon": "fa-thin fa-xmark",
+        "text": "Custom Mobile App"
+      },
+      {
+        "icon": "fa-thin fa-xmark",
+        "text": "Video Animation Production"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "sub_title": "Enterprise",
+    "title": "Complete Solution",
+    "price": {
+      "currency": "$",
+      "price": "2499",
+      "under_dot": "99",
+      "price_desc": "/project"
+    },
+    "list": [
+      {
+        "icon": "fa-light fa-check",
+        "text": "Full Website + Mobile App"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Complete Brand Ecosystem"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Advanced E-commerce Platform"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Professional Animation & Video"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "Comprehensive Digital Marketing"
+      },
+      {
+        "icon": "fa-light fa-check",
+        "text": "24/7 Support & Maintenance"
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "thumb": "cloud.png",
+        "title": "Website Development",
+        "text": "Custom responsive websites built with modern technologies to enhance your online presence and user experience."
+    },
+    {
+        "id": 2,
+        "thumb": "ebene.png",
+        "title": "Logo Design",
+        "text": "Professional brand identity design that captures your company's vision and creates lasting impressions."
+    },
+    {
+        "id": 3,
+        "thumb": "api.png",
+        "title": "Ecommerce Solutions",
+        "text": "Complete online store development with secure payment integration and inventory management systems."
+    },
+    {
+        "id": 4,
+        "thumb": "desktop.png",
+        "title": "Animation",
+        "text": "Engaging motion graphics and animations that bring your brand story to life and captivate audiences."
+    },
+    {
+        "id": 5,
+        "thumb": "cloud.png",
+        "title": "Illustration",
+        "text": "Custom illustrations and graphic design solutions that communicate your message with visual impact."
+    },
+    {
+        "id": 6,
+        "thumb": "ebene.png",
+        "title": "Marketing Collateral",
+        "text": "Professional marketing materials including brochures, flyers, and digital assets for brand promotion."
+    },
+    {
+        "id": 7,
+        "thumb": "api.png",
+        "title": "Mobile Apps",
+        "text": "Native and cross-platform mobile applications designed for optimal performance and user engagement."
+    },
+    {
+        "id": 8,
+        "thumb": "desktop.png",
+        "title": "SEO Services",
+        "text": "Search engine optimization strategies to improve your website's visibility and organic traffic."
+    },
+    {
+        "id": 9,
+        "thumb": "cloud.png",
+        "title": "Digital Marketing",
+        "text": "Comprehensive digital marketing campaigns including social media, PPC, and content marketing strategies."
+    },
+    {
+        "id": 10,
+        "thumb": "ebene.png",
+        "title": "Creative Copywriting",
+        "text": "Compelling copy and content creation that engages audiences and drives conversions across all platforms."
+    }
+]

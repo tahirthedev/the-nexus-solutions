@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "thumb": "service-1.png",
+        "thumbLink": "project-details",
+        "title": "E-commerce Platform",
+        "shortDesc": "Modern online store with advanced shopping cart functionality and secure payment integration"
+    },
+    {
+        "id": 2,
+        "thumb": "service-2.png",
+        "thumbLink": "project-details",
+        "title":  "Corporate Website Redesign",
+        "shortDesc": "Professional website redesign with responsive design and enhanced user experience"
+    },
+    {
+        "id": 3,
+        "thumb": "service-3.png",
+        "thumbLink": "project-details",
+        "title":  "Mobile App Development",
+        "shortDesc": "Cross-platform mobile application with intuitive UI and seamless performance"
+    },
+    {
+        "id": 4,
+        "thumb": "service-4.png",
+        "thumbLink": "project-details",
+        "title":  "Brand Identity Package",
+        "shortDesc": "Complete branding solution including logo design, color palette, and brand guidelines"
+    },
+    {
+        "id": 5,
+        "thumb": "service-5.png",
+        "thumbLink": "project-details",
+        "title":  "Digital Marketing Campaign",
+        "shortDesc": "Comprehensive digital marketing strategy with social media and SEO optimization"
+    },
+    {
+        "id": 6,
+        "thumb": "service-6.png",
+        "thumbLink": "project-details",
+        "title":  "Content Management System",
+        "shortDesc": "Custom CMS development for easy content management and website administration"
+    }
+]

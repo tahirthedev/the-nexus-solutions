@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "icon": "fa-solid fa-angles-right",
+        "listItem": "Professional website development and design"
+    },
+    {
+        "id": 2,
+        "icon": "fa-solid fa-angles-right",
+        "listItem": "Creative branding and marketing solutions"
+    },
+    {
+        "id": 3,
+        "icon": "fa-solid fa-angles-right",
+        "listItem": "Mobile apps and ecommerce platforms"
+    }
+]

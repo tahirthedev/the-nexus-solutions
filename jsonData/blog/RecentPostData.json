@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "thumb": "rp-1.jpg",
+        "title": "Elevate your business with IT expertise",
+        "category": "Web Design",
+        "icon": "fa-light fa-folder-open"
+    },
+    {
+        "id": 2,
+        "thumb": "rp-2.jpg",
+        "title": "Connecting businesses transforming",
+        "category": "Web Design",
+        "icon": "fa-light fa-folder-open"
+    },
+    {
+        "id": 3,
+        "thumb": "rp-3.jpg",
+        "title": "A picture is worth standard and stand us return",
+        "category": "Web Design",
+        "icon": "fa-light fa-folder-open"
+    }
+]

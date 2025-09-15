@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "icon": "icon-1.png",
+        "title": "Discovery & Planning",
+        "text": "We begin by understanding your business goals, target audience, and project requirements to create a strategic roadmap for success."
+    },
+    {
+        "id": 2,
+        "icon": "icon-1.png",
+        "title": "Design & Development",
+        "text": "Our expert team crafts innovative solutions using cutting-edge technologies and best practices to bring your vision to life."
+    },
+    {
+        "id": 3,
+        "icon": "icon-1.png",
+        "title": "Launch & Support",
+        "text": "We ensure a smooth launch and provide ongoing support and maintenance to keep your digital assets performing optimally."
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "thumbFull": "b1.jpg",
+        "title": "Empowering businesses through technology",
+        "author": "Wells Alden",
+        "category": "Web Design",
+        "date": "March 03, 2023",
+        "comments": "4",
+        "text": "Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum.",
+        "btnText": "Learn More",
+        "btnIcon": "fa-solid fa-plus"
+    },
+    {
+        "id": 2,
+        "thumbFull": "b2.jpg",
+        "title": "Creating A Business Plan For Your Digital Agency",
+        "author": "Wells Alden",
+        "category": "Web Design",
+        "date": "March 05, 2023",
+        "comments": "5",
+        "text": "Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum.",
+        "btnText": "Learn More",
+        "btnIcon": "fa-solid fa-plus"
+    },
+    {
+        "id": 3,
+        "thumbFull": "b3.jpg",
+        "title": "Driving efficiency through cutting technology",
+        "author": "Wells Alden",
+        "category": "Web Design",
+        "date": "March 07, 2023",
+        "comments": "6",
+        "text": "Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum.",
+        "btnText": "Learn More",
+        "btnIcon": "fa-solid fa-plus"
+    },
+    {
+        "id": 4,
+        "thumbFull": "b4.jpg",
+        "title": "Driving efficiency through cutting technology",
+        "author": "Wells Alden",
+        "category": "Web Design",
+        "date": "March 09, 2023",
+        "comments": "7",
+        "text": "Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum.",
+        "btnText": "Learn More",
+        "btnIcon": "fa-solid fa-plus"
+    },
+    {
+        "id": 5,
+        "thumbFull": "b3.jpg",
+        "title": "Empowering businesses through technology",
+        "author": "Wells Alden",
+        "category": "Web Design",
+        "date": "March 10, 2023",
+        "comments": "8",
+        "text": "Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum. Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum.",
+        "btnText": "Learn More",
+        "btnIcon": "fa-solid fa-plus"
+    }
+]

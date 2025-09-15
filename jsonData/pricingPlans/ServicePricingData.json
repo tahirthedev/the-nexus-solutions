@@ -1,0 +1,930 @@
+{
+  "website-development": {
+    "serviceTitle": "Website Development",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Basic",
+        "title": "Startup Website",
+        "price": {
+          "currency": "$",
+          "price": "249",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $500.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "3 Page Website + 5 Stock Photos" },
+          { "icon": "fa-light fa-check", "text": "3 Banner Design + jQuery Slider" },
+          { "icon": "fa-light fa-check", "text": "Complete W3C Certified HTML" },
+          { "icon": "fa-light fa-check", "text": "Social Media Pages (Facebook, Twitter, YouTube)" },
+          { "icon": "fa-light fa-check", "text": "48-72 hours TAT" },
+          { "icon": "fa-thin fa-xmark", "text": "Mobile Responsive (Additional $99)" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Professional",
+        "title": "Pro Website",
+        "price": {
+          "currency": "$",
+          "price": "599",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $1200.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "10 Unique Pages + CMS Admin Panel" },
+          { "icon": "fa-light fa-check", "text": "8 Stock Images + 5 Banner Designs" },
+          { "icon": "fa-light fa-check", "text": "jQuery Slider + W3C Certified HTML" },
+          { "icon": "fa-light fa-check", "text": "Social Media Pages Design" },
+          { "icon": "fa-light fa-check", "text": "Complete Deployment" },
+          { "icon": "fa-thin fa-xmark", "text": "Mobile Responsive (Additional $99)" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Premium",
+        "title": "Elite Website",
+        "price": {
+          "currency": "$",
+          "price": "999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $2000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Up to 15 Unique Pages + Mobile Responsive" },
+          { "icon": "fa-light fa-check", "text": "Dynamic Website + Custom Forms" },
+          { "icon": "fa-light fa-check", "text": "Online Payment Integration (Optional)" },
+          { "icon": "fa-light fa-check", "text": "Social Media Integration + SEO Submission" },
+          { "icon": "fa-light fa-check", "text": "Newsletter Subscription + Hover Effects" },
+          { "icon": "fa-light fa-check", "text": "5 Stock Photos + 3 Banner Designs" }
+        ]
+      },
+      {
+        "id": 4,
+        "sub_title": "Business",
+        "title": "Silver Startup",
+        "price": {
+          "currency": "$",
+          "price": "1599",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $3200.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "15-20 Pages + Custom WordPress Development" },
+          { "icon": "fa-light fa-check", "text": "Interactive Dynamic Design + CMS" },
+          { "icon": "fa-light fa-check", "text": "Online Scheduling + Payment Integration" },
+          { "icon": "fa-light fa-check", "text": "Multi-Lingual Support + Custom Forms" },
+          { "icon": "fa-light fa-check", "text": "Mobile Responsive + Social Integration" },
+          { "icon": "fa-light fa-check", "text": "Dedicated Account Manager" }
+        ]
+      },
+      {
+        "id": 5,
+        "sub_title": "Enterprise",
+        "title": "Business Website",
+        "price": {
+          "currency": "$",
+          "price": "2499",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $5000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Pages + Custom PHP Development" },
+          { "icon": "fa-light fa-check", "text": "60 Second 2D Explainer Video + Voice Over" },
+          { "icon": "fa-light fa-check", "text": "Professional Script + Storyboard" },
+          { "icon": "fa-light fa-check", "text": "SEO Meta Tags + Advanced CMS" },
+          { "icon": "fa-light fa-check", "text": "Complete Social Media Integration" },
+          { "icon": "fa-light fa-check", "text": "Expert Team + Dedicated Manager" }
+        ]
+      },
+      {
+        "id": 6,
+        "sub_title": "Advanced",
+        "title": "Interactive Portal",
+        "price": {
+          "currency": "$",
+          "price": "4999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $10000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Pages + Custom CMS Development" },
+          { "icon": "fa-light fa-check", "text": "Video Conferencing + Learning Management" },
+          { "icon": "fa-light fa-check", "text": "E-commerce + Online Course Booking" },
+          { "icon": "fa-light fa-check", "text": "Assessment Management + Reporting" },
+          { "icon": "fa-light fa-check", "text": "Social Learning + Message Boards" },
+          { "icon": "fa-light fa-check", "text": "40 Stock Images + 10 Banner Designs" }
+        ]
+      },
+      {
+        "id": 7,
+        "sub_title": "Ultimate",
+        "title": "Custom CRM Portal",
+        "price": {
+          "currency": "$",
+          "price": "6999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $14000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Complete CRM System + Sales Automation" },
+          { "icon": "fa-light fa-check", "text": "Advanced Analytics + Business Intelligence" },
+          { "icon": "fa-light fa-check", "text": "Human Resources Management + ERP" },
+          { "icon": "fa-light fa-check", "text": "Automated Invoicing + Financial Reports" },
+          { "icon": "fa-light fa-check", "text": "Enterprise Integration + Real-Time Operations" },
+          { "icon": "fa-light fa-check", "text": "Custom Development + Advanced Admin Features" }
+        ]
+      }
+    ]
+  },
+  "logo-design": {
+    "serviceTitle": "Logo Design",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Basic",
+        "title": "Basic Logo",
+        "price": {
+          "currency": "$",
+          "price": "24",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $50.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "2 Custom Logo Design Concepts" },
+          { "icon": "fa-light fa-check", "text": "3 Revision Rounds" },
+          { "icon": "fa-light fa-check", "text": "24 Hours TAT" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Unique Design Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Starter",
+        "title": "Beginners Logo",
+        "price": {
+          "currency": "$",
+          "price": "49",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $100.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "4 Custom Logo Design Concepts" },
+          { "icon": "fa-light fa-check", "text": "FREE Icon + Grayscale Formats" },
+          { "icon": "fa-light fa-check", "text": "6 Revision Rounds" },
+          { "icon": "fa-light fa-check", "text": "24 Hours TAT" },
+          { "icon": "fa-light fa-check", "text": "Files Format (JPEG, PNG, PDF, TIFF)" },
+          { "icon": "fa-light fa-check", "text": "100% Ownership Rights" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Popular",
+        "title": "Silver Logo",
+        "price": {
+          "currency": "$",
+          "price": "99",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $200.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "8 Logo Design Concepts by 4 Designers" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "Stationary Design (Business Card, Letterhead)" },
+          { "icon": "fa-light fa-check", "text": "FREE MS Word Letterhead" },
+          { "icon": "fa-light fa-check", "text": "48-72 hours TAT" },
+          { "icon": "fa-light fa-check", "text": "All Final Files (PSD, PNG, JPG)" }
+        ]
+      },
+      {
+        "id": 4,
+        "sub_title": "Premium",
+        "title": "Gold Logo",
+        "price": {
+          "currency": "$",
+          "price": "124",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $250.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Logo Concepts by 6 Designers" },
+          { "icon": "fa-light fa-check", "text": "FREE Custom Stationery + Email Signature" },
+          { "icon": "fa-light fa-check", "text": "Free Invoice Design" },
+          { "icon": "fa-light fa-check", "text": "FREE Color + Grayscale Options" },
+          { "icon": "fa-light fa-check", "text": "24 Hours Turnaround" },
+          { "icon": "fa-light fa-check", "text": "All Formats (PSD, PDF, AI, JPEG, PNG)" }
+        ]
+      },
+      {
+        "id": 5,
+        "sub_title": "Business",
+        "title": "Platinum Logo",
+        "price": {
+          "currency": "$",
+          "price": "174",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $350.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Logo Concepts by 8 Designers" },
+          { "icon": "fa-light fa-check", "text": "2 Custom Stationery Designs" },
+          { "icon": "fa-light fa-check", "text": "2 Sided Flyer OR Bi-Fold Brochure" },
+          { "icon": "fa-light fa-check", "text": "Email Signature + Invoice Design" },
+          { "icon": "fa-light fa-check", "text": "24 Hours TAT" },
+          { "icon": "fa-light fa-check", "text": "All Final Formats (AI, PSD, EPS, PNG, PDF)" }
+        ]
+      },
+      {
+        "id": 6,
+        "sub_title": "Enterprise",
+        "title": "Elite Logo",
+        "price": {
+          "currency": "$",
+          "price": "299",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $600.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Concepts by 10 Design Artists" },
+          { "icon": "fa-light fa-check", "text": "Website Design Mockup" },
+          { "icon": "fa-light fa-check", "text": "Social Media Pages Design (Any 3)" },
+          { "icon": "fa-light fa-check", "text": "T-Shirt/Signage/Packaging Design (Any 2)" },
+          { "icon": "fa-light fa-check", "text": "Complete Stationery Package" },
+          { "icon": "fa-light fa-check", "text": "All Formats + 24 Hours TAT" }
+        ]
+      },
+      {
+        "id": 7,
+        "sub_title": "Professional",
+        "title": "3D Logo",
+        "price": {
+          "currency": "$",
+          "price": "499",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $1000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "3 Unique 3D Logo Concepts" },
+          { "icon": "fa-light fa-check", "text": "Light Effects and VFX" },
+          { "icon": "fa-light fa-check", "text": "Fully Rendered + Multiple 3D Angles" },
+          { "icon": "fa-light fa-check", "text": "By 3 Award Winning Designers" },
+          { "icon": "fa-light fa-check", "text": "72 Hours Turnaround Time" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions + 100% Ownership" }
+        ]
+      }
+    ]
+  },
+  "ecommerce-solutions": {
+    "serviceTitle": "Ecommerce Solutions",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Starter",
+        "title": "Beginners E-Commerce",
+        "price": {
+          "currency": "$",
+          "price": "999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $2000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Upto 15 Unique Pages Website" },
+          { "icon": "fa-light fa-check", "text": "Conceptual and Dynamic Website" },
+          { "icon": "fa-light fa-check", "text": "Content Management System (CMS)" },
+          { "icon": "fa-light fa-check", "text": "Mobile Responsive" },
+          { "icon": "fa-light fa-check", "text": "Easy Product Search" },
+          { "icon": "fa-light fa-check", "text": "Product Reviews + Up to 100 Products" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Professional",
+        "title": "Pro Website",
+        "price": {
+          "currency": "$",
+          "price": "1575",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $3150.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Unique Pages Website" },
+          { "icon": "fa-light fa-check", "text": "Conceptual and Dynamic Website" },
+          { "icon": "fa-light fa-check", "text": "Content Management System (CMS)" },
+          { "icon": "fa-light fa-check", "text": "Mobile Responsive" },
+          { "icon": "fa-light fa-check", "text": "Easy Product Search" },
+          { "icon": "fa-light fa-check", "text": "Product Reviews + Unlimited Products" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Premium",
+        "title": "Elite E-Commerce",
+        "price": {
+          "currency": "$",
+          "price": "2499",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $5000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Logo Design Concepts" },
+          { "icon": "fa-light fa-check", "text": "By 6 Award Winning Designers" },
+          { "icon": "fa-light fa-check", "text": "Icon Design" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "Print Media" },
+          { "icon": "fa-light fa-check", "text": "Stationary Design + Invoice Design" }
+        ]
+      },
+      {
+        "id": 4,
+        "sub_title": "Enterprise",
+        "title": "Custom E-Commerce Marketplace",
+        "price": {
+          "currency": "$",
+          "price": "6999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $14000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Page Website" },
+          { "icon": "fa-light fa-check", "text": "Unique Pages and UI Design" },
+          { "icon": "fa-light fa-check", "text": "Complete Custom Development" },
+          { "icon": "fa-light fa-check", "text": "Newsfeed Integration" },
+          { "icon": "fa-light fa-check", "text": "Social Media Plugins Integration" },
+          { "icon": "fa-light fa-check", "text": "Advanced Ecommerce Marketplace Features" }
+        ]
+      },
+      {
+        "id": 5,
+        "sub_title": "Advanced",
+        "title": "Automated E-Commerce",
+        "price": {
+          "currency": "$",
+          "price": "9999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $20000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Page Website" },
+          { "icon": "fa-light fa-check", "text": "Custom Content Management System (CMS)" },
+          { "icon": "fa-light fa-check", "text": "Unique Pages and UI Design" },
+          { "icon": "fa-light fa-check", "text": "Complete Custom Development" },
+          { "icon": "fa-light fa-check", "text": "Process Automation Tools" },
+          { "icon": "fa-light fa-check", "text": "Newsfeed + Social Media Integration" }
+        ]
+      },
+      {
+        "id": 6,
+        "sub_title": "Ultimate",
+        "title": "Custom CRM-ERP Portal",
+        "price": {
+          "currency": "$",
+          "price": "14999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $30000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Unlimited Page Website" },
+          { "icon": "fa-light fa-check", "text": "Unique Pages and UI Design" },
+          { "icon": "fa-light fa-check", "text": "Complete Custom Development" },
+          { "icon": "fa-light fa-check", "text": "Newsfeed Integration" },
+          { "icon": "fa-light fa-check", "text": "CRM (Customer Relation Management System)" },
+          { "icon": "fa-light fa-check", "text": "Performance and Analytics + Customization" }
+        ]
+      }
+    ]
+  },
+  "animation": {
+    "serviceTitle": "Animation",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Basic",
+        "title": "Intro Video Animation",
+        "price": {
+          "currency": "£",
+          "price": "149",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was £300.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "15s Duration - HD 1080" },
+          { "icon": "fa-light fa-check", "text": "Professional Script" },
+          { "icon": "fa-light fa-check", "text": "Storyboard" },
+          { "icon": "fa-light fa-check", "text": "Sample Themes" },
+          { "icon": "fa-light fa-check", "text": "Custom Setting, Characters & Graphics" },
+          { "icon": "fa-light fa-check", "text": "Voice - Over & Sound Effects (All accents)" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Standard",
+        "title": "Startup Video",
+        "price": {
+          "currency": "£",
+          "price": "199",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was £400.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "30s Duration - HD 1080" },
+          { "icon": "fa-light fa-check", "text": "Professional Script" },
+          { "icon": "fa-light fa-check", "text": "Storyboard" },
+          { "icon": "fa-light fa-check", "text": "Sample Themes" },
+          { "icon": "fa-light fa-check", "text": "Custom Setting, Characters & Graphics" },
+          { "icon": "fa-light fa-check", "text": "Voice - Over & Sound Effects (All accents)" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Premium",
+        "title": "Classic Video",
+        "price": {
+          "currency": "£",
+          "price": "399",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was £800.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "60 Second Video - HD 1080" },
+          { "icon": "fa-light fa-check", "text": "Professional Script" },
+          { "icon": "fa-light fa-check", "text": "Sample Theme" },
+          { "icon": "fa-light fa-check", "text": "Storyboard" },
+          { "icon": "fa-light fa-check", "text": "Animation" },
+          { "icon": "fa-light fa-check", "text": "Voice - Over & Sound Effects + 5 weeks Delivery" }
+        ]
+      },
+      {
+        "id": 4,
+        "sub_title": "Professional",
+        "title": "Premium Video",
+        "price": {
+          "currency": "£",
+          "price": "699",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was £1400.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "90 Second Video - HD 1080" },
+          { "icon": "fa-light fa-check", "text": "Professional Script" },
+          { "icon": "fa-light fa-check", "text": "Sample Theme" },
+          { "icon": "fa-light fa-check", "text": "Storyboard" },
+          { "icon": "fa-light fa-check", "text": "Animation" },
+          { "icon": "fa-light fa-check", "text": "Voice - Over & Sound Effects + 6 Weeks Delivery" }
+        ]
+      },
+      {
+        "id": 5,
+        "sub_title": "Enterprise",
+        "title": "Deluxe Video",
+        "price": {
+          "currency": "£",
+          "price": "999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was £2000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "120 Second Video - HD 1080" },
+          { "icon": "fa-light fa-check", "text": "Professional Script" },
+          { "icon": "fa-light fa-check", "text": "Sample Theme" },
+          { "icon": "fa-light fa-check", "text": "Storyboard" },
+          { "icon": "fa-light fa-check", "text": "Animation" },
+          { "icon": "fa-light fa-check", "text": "Voice - Over & Sound Effects + Unlimited Revisions" }
+        ]
+      }
+    ]
+  },
+  "illustration": {
+    "serviceTitle": "Illustration",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Basic",
+        "title": "Basic Illustrative",
+        "price": {
+          "currency": "$",
+          "price": "255",
+          "under_dot": ".00",
+          "price_desc": "ONLY (Was $510.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "3 Custom Logo Design Concepts" },
+          { "icon": "fa-light fa-check", "text": "By 2 Designers" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "48 Hours Turn Around Time" },
+          { "icon": "fa-light fa-check", "text": "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)" },
+          { "icon": "fa-light fa-check", "text": "100% Ownership Rights + 100% Satisfaction Guarantee" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Standard",
+        "title": "Startup Illustrative",
+        "price": {
+          "currency": "$",
+          "price": "355",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $710.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "48 Hours Turn Around Time" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)" },
+          { "icon": "fa-light fa-check", "text": "100% Ownership Rights" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Unique Design Guarantee + 100% Money Back Guarantee" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Premium",
+        "title": "Gold Illustrative",
+        "price": {
+          "currency": "$",
+          "price": "555",
+          "under_dot": ".00",
+          "price_desc": "ONLY (Was $1110.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Logo Design Concepts" },
+          { "icon": "fa-light fa-check", "text": "By 4 Designers" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "48 Hours Turn Around Time" },
+          { "icon": "fa-light fa-check", "text": "All Final Files Format (AI, PSD, EPS, PNG, GIF, JPG, PDF)" },
+          { "icon": "fa-light fa-check", "text": "100% Ownership Rights + 100% Satisfaction Guarantee" }
+        ]
+      }
+    ]
+  },
+  "marketing-collateral": {
+    "serviceTitle": "Marketing Collateral",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Starter",
+        "title": "Startup Collateral",
+        "price": {
+          "currency": "$",
+          "price": "49",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $100.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "2 Stationery Design Set" },
+          { "icon": "fa-light fa-check", "text": "FREE Fax Template" },
+          { "icon": "fa-light fa-check", "text": "Print Ready Formats" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Professional",
+        "title": "Collateral Classic",
+        "price": {
+          "currency": "$",
+          "price": "129",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $250.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "2 Stationery Design Set" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "Flyer Design" },
+          { "icon": "fa-light fa-check", "text": "Brochure Design (Bi-fold/Tri-fold)" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Premium",
+        "title": "Premium Collateral",
+        "price": {
+          "currency": "$",
+          "price": "199",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $400.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "2 Stationery Design Set" },
+          { "icon": "fa-light fa-check", "text": "Packaging Design" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Revisions" },
+          { "icon": "fa-light fa-check", "text": "T-Shirt Design" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee" }
+        ]
+      },
+      {
+        "id": 4,
+        "sub_title": "Enterprise",
+        "title": "Complete Branding",
+        "price": {
+          "currency": "$",
+          "price": "999",
+          "under_dot": ".99",
+          "price_desc": "ONLY (Was $2000.00)"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "2 Stationery Design Set" },
+          { "icon": "fa-light fa-check", "text": "Unlimited Custom Logo Design Concepts" },
+          { "icon": "fa-light fa-check", "text": "6 Dedicated Designers" },
+          { "icon": "fa-light fa-check", "text": "UNLIMITED Pages Website" },
+          { "icon": "fa-light fa-check", "text": "Mobile Responsive" },
+          { "icon": "fa-light fa-check", "text": "Icon Design + Business Card, Letterhead, Envelope" }
+        ]
+      }
+    ]
+  },
+  "mobile-apps": {
+    "serviceTitle": "Mobile Apps",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Basic",
+        "title": "Simple App",
+        "price": {
+          "currency": "$",
+          "price": "2999",
+          "under_dot": ".99",
+          "price_desc": "/project"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "iOS OR Android" },
+          { "icon": "fa-light fa-check", "text": "Up to 5 Screens" },
+          { "icon": "fa-light fa-check", "text": "Basic UI/UX Design" },
+          { "icon": "fa-light fa-check", "text": "App Store Submission" },
+          { "icon": "fa-thin fa-xmark", "text": "Backend Integration" },
+          { "icon": "fa-thin fa-xmark", "text": "Push Notifications" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Standard",
+        "title": "Business App",
+        "price": {
+          "currency": "$",
+          "price": "5999",
+          "under_dot": ".99",
+          "price_desc": "/project"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "iOS AND Android" },
+          { "icon": "fa-light fa-check", "text": "Up to 15 Screens" },
+          { "icon": "fa-light fa-check", "text": "Professional UI/UX" },
+          { "icon": "fa-light fa-check", "text": "Backend Integration" },
+          { "icon": "fa-light fa-check", "text": "Push Notifications" },
+          { "icon": "fa-thin fa-xmark", "text": "Advanced Features" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Enterprise",
+        "title": "Custom App",
+        "price": {
+          "currency": "$",
+          "price": "12999",
+          "under_dot": ".99",
+          "price_desc": "/project"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "Cross-Platform Solution" },
+          { "icon": "fa-light fa-check", "text": "Unlimited Screens" },
+          { "icon": "fa-light fa-check", "text": "Advanced Features" },
+          { "icon": "fa-light fa-check", "text": "API Development" },
+          { "icon": "fa-light fa-check", "text": "Analytics Integration" },
+          { "icon": "fa-light fa-check", "text": "6 Months Support" }
+        ]
+      }
+    ]
+  },
+  "seo-services": {
+    "serviceTitle": "SEO Services",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Was $1000.00 ONLY",
+        "title": "Startup SEO",
+        "price": {
+          "currency": "$",
+          "price": "499",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "5 Keywords" },
+          { "icon": "fa-light fa-check", "text": "Guaranteed Ranking on Google" },
+          { "icon": "fa-light fa-check", "text": "Off-site Optimization" },
+          { "icon": "fa-light fa-check", "text": "Link Building" },
+          { "icon": "fa-light fa-check", "text": "Social Bookmarking" },
+          { "icon": "fa-light fa-check", "text": "Basic Analytical Report" },
+          { "icon": "fa-light fa-check", "text": "In-depth Site Analysis" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Was $1700.00 ONLY",
+        "title": "Identity SEO",
+        "price": {
+          "currency": "$",
+          "price": "849",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "10 Keywords" },
+          { "icon": "fa-light fa-check", "text": "Guaranteed Ranking on Google" },
+          { "icon": "fa-light fa-check", "text": "Off-site Optimization" },
+          { "icon": "fa-light fa-check", "text": "On-site Optimization" },
+          { "icon": "fa-light fa-check", "text": "Link Building" },
+          { "icon": "fa-light fa-check", "text": "Social Bookmarking" },
+          { "icon": "fa-light fa-check", "text": "In-depth Site Analysis" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Was $4300.00 ONLY",
+        "title": "Professional SEO",
+        "price": {
+          "currency": "$",
+          "price": "2149",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "30 Keywords" },
+          { "icon": "fa-light fa-check", "text": "Guaranteed Ranking on Google" },
+          { "icon": "fa-light fa-check", "text": "Off-site Optimization" },
+          { "icon": "fa-light fa-check", "text": "On-site Optimization" },
+          { "icon": "fa-light fa-check", "text": "Link Building" },
+          { "icon": "fa-light fa-check", "text": "Social Bookmarking" },
+          { "icon": "fa-light fa-check", "text": "In-depth Site Analysis" }
+        ]
+      },
+      {
+        "id": 4,
+        "sub_title": "Was $3100.00 ONLY",
+        "title": "Elite SEO",
+        "price": {
+          "currency": "$",
+          "price": "1549",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "20 Keywords" },
+          { "icon": "fa-light fa-check", "text": "Guaranteed Ranking on Google" },
+          { "icon": "fa-light fa-check", "text": "Off-site Optimization" },
+          { "icon": "fa-light fa-check", "text": "On-site Optimization" },
+          { "icon": "fa-light fa-check", "text": "Link Building" },
+          { "icon": "fa-light fa-check", "text": "Social Bookmarking" },
+          { "icon": "fa-light fa-check", "text": "In-depth Site Analysis" }
+        ]
+      }
+    ]
+  },
+  "digital-marketing": {
+    "serviceTitle": "Digital Marketing",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Starter",
+        "title": "Social Media",
+        "price": {
+          "currency": "$",
+          "price": "399",
+          "under_dot": ".99",
+          "price_desc": "/month"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "2 Social Media Platforms" },
+          { "icon": "fa-light fa-check", "text": "10 Posts per Month" },
+          { "icon": "fa-light fa-check", "text": "Basic Graphics" },
+          { "icon": "fa-light fa-check", "text": "Community Management" },
+          { "icon": "fa-thin fa-xmark", "text": "Paid Advertising" },
+          { "icon": "fa-thin fa-xmark", "text": "Email Marketing" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Professional",
+        "title": "Multi-Channel",
+        "price": {
+          "currency": "$",
+          "price": "799",
+          "under_dot": ".99",
+          "price_desc": "/month"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "4 Social Media Platforms" },
+          { "icon": "fa-light fa-check", "text": "20 Posts per Month" },
+          { "icon": "fa-light fa-check", "text": "Email Marketing Campaign" },
+          { "icon": "fa-light fa-check", "text": "Basic Paid Advertising" },
+          { "icon": "fa-light fa-check", "text": "Monthly Analytics Report" },
+          { "icon": "fa-thin fa-xmark", "text": "Advanced Automation" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Enterprise",
+        "title": "Full Campaign",
+        "price": {
+          "currency": "$",
+          "price": "1599",
+          "under_dot": ".99",
+          "price_desc": "/month"
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "All Major Platforms" },
+          { "icon": "fa-light fa-check", "text": "Daily Content Creation" },
+          { "icon": "fa-light fa-check", "text": "Advanced Paid Advertising" },
+          { "icon": "fa-light fa-check", "text": "Marketing Automation" },
+          { "icon": "fa-light fa-check", "text": "Conversion Optimization" },
+          { "icon": "fa-light fa-check", "text": "Dedicated Account Manager" }
+        ]
+      }
+    ]
+  },
+  "creative-copywriting": {
+    "serviceTitle": "Creative Copywriting",
+    "packages": [
+      {
+        "id": 1,
+        "sub_title": "Was $110.00 ONLY",
+        "title": "Article Writing",
+        "price": {
+          "currency": "$",
+          "price": "54",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "300 Words per Page" },
+          { "icon": "fa-light fa-check", "text": "Timely Delivery" },
+          { "icon": "fa-light fa-check", "text": "Superior Standard Content" },
+          { "icon": "fa-light fa-check", "text": "Professional Writers" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee*" }
+        ]
+      },
+      {
+        "id": 2,
+        "sub_title": "Was $310.00 ONLY",
+        "title": "Creative Writing",
+        "price": {
+          "currency": "$",
+          "price": "154",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "250 Words per Page" },
+          { "icon": "fa-light fa-check", "text": "Timely Delivery" },
+          { "icon": "fa-light fa-check", "text": "Superior Standard Content" },
+          { "icon": "fa-light fa-check", "text": "Professional Industry Specific Writers" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee*" }
+        ]
+      },
+      {
+        "id": 3,
+        "sub_title": "Was $110.00 ONLY",
+        "title": "Blog Writing",
+        "price": {
+          "currency": "$",
+          "price": "54",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "250 Words per Page" },
+          { "icon": "fa-light fa-check", "text": "Timely Delivery" },
+          { "icon": "fa-light fa-check", "text": "Superior Standard Content" },
+          { "icon": "fa-light fa-check", "text": "Professional Writers" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee*" }
+        ]
+      },
+      {
+        "id": 4,
+        "sub_title": "Was $310.00 ONLY",
+        "title": "Infographics",
+        "price": {
+          "currency": "$",
+          "price": "154",
+          "under_dot": ".99",
+          "price_desc": ""
+        },
+        "list": [
+          { "icon": "fa-light fa-check", "text": "120 Words per Page" },
+          { "icon": "fa-light fa-check", "text": "Timely Delivery" },
+          { "icon": "fa-light fa-check", "text": "Superior Standard Content" },
+          { "icon": "fa-light fa-check", "text": "Professional Writers" },
+          { "icon": "fa-light fa-check", "text": "100% Satisfaction Guarantee" },
+          { "icon": "fa-light fa-check", "text": "100% Money Back Guarantee*" }
+        ]
+      }
+    ]
+  }
+}

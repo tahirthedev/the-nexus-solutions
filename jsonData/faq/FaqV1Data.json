@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "accordionId": "headingOne",
+        "accordionClass": "",
+        "dataBsTarget": "#collapseOne",
+        "ariaExpanded": "true",
+        "ariaControls": "collapseOne",
+        "title": "1. What services does Nexus Solutions offer?",
+        "collapseClass": "show",
+        "text": "We offer comprehensive digital services including website development, logo design, e-commerce solutions, mobile app development, digital marketing, SEO services, animation, illustration, marketing collateral, and creative copywriting."
+    },
+    {
+        "id": 2,
+        "accordionId": "headingTwo",
+        "accordionClass": "collapsed",
+        "dataBsTarget": "#collapseTwo",
+        "ariaExpanded": "false",
+        "ariaControls": "collapseTwo",
+        "title": "2. How long does a typical website development project take?",
+        "collapseClass": "",
+        "text": "Project timelines vary based on complexity and requirements. A basic website typically takes 2-4 weeks, while more complex e-commerce or custom applications may take 6-12 weeks. We provide detailed timelines during our initial consultation."
+    },
+    {
+        "id": 3,
+        "accordionId": "headingThree",
+        "accordionClass": "collapsed",
+        "dataBsTarget": "#collapseThree",
+        "ariaExpanded": "false",
+        "ariaControls": "collapseThree",
+        "title": "3. Do you provide ongoing support and maintenance?",
+        "collapseClass": "",
+        "text": "Yes, we offer comprehensive support and maintenance packages to ensure your digital assets continue to perform optimally. This includes regular updates, security monitoring, performance optimization, and technical support."
+    },
+    {
+        "id": 4,
+        "accordionId": "headingFour",
+        "accordionClass": "collapsed",
+        "dataBsTarget": "#collapseFour",
+        "ariaExpanded": "false",
+        "ariaControls": "collapseFour",
+        "title": "4. Can you help improve my website's search engine ranking?",
+        "collapseClass": "",
+        "text": "Absolutely! Our SEO services include keyword research, on-page optimization, technical SEO audits, content strategy, and link building campaigns designed to improve your search engine visibility and organic traffic."
+    }
+]

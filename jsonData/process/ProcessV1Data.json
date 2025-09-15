@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "icon": "icon-1.png",
+        "title": "Strategize",
+        "text": "We analyze your business needs, market research, and competitor analysis to create a comprehensive digital strategy that aligns with your goals."
+    },
+    {
+        "id": 2,
+        "icon": "icon-2.png",
+        "title": "Execute",
+        "text": "Our expert team implements the strategy using cutting-edge technologies and industry best practices to deliver exceptional results."
+    },
+    {
+        "id": 3,
+        "icon": "icon-3.png",
+        "title": "Optimize",
+        "text": "We continuously monitor performance, gather feedback, and make data-driven improvements to maximize your digital success."
+    }
+]

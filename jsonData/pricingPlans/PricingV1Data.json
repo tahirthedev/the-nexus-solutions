@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "sub_title": "Starter",
+    "title": "Essential Package",
+    "price": {
+      "currency": "$",
+      "price": "499",
+      "under_dot": "99",
+      "price_desc": "/project"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Basic Website Development (5 pages)" },
+      { "icon": "fa-light fa-check", "text": "Simple Logo Design" },
+      { "icon": "fa-light fa-check", "text": "Basic SEO Setup" },
+      { "icon": "fa-light fa-check", "text": "Social Media Graphics (5 designs)" },
+      { "icon": "fa-light fa-check", "text": "Basic Copywriting (website content)" },
+      { "icon": "fa-thin fa-xmark", "text": "E-commerce Integration" }
+    ]
+  },
+  {
+    "id": 2,
+    "sub_title": "Professional",
+    "title": "Business Package",
+    "price": {
+      "currency": "$",
+      "price": "999",
+      "under_dot": "99",
+      "price_desc": "/project"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Advanced Website (10+ pages)" },
+      { "icon": "fa-light fa-check", "text": "Complete Brand Identity Package" },
+      { "icon": "fa-light fa-check", "text": "Basic E-commerce Store (50 products)" },
+      { "icon": "fa-light fa-check", "text": "Custom Illustrations (10 designs)" },
+      { "icon": "fa-light fa-check", "text": "Digital Marketing Strategy" },
+      { "icon": "fa-light fa-check", "text": "Professional Copywriting" }
+    ]
+  },
+  {
+    "id": 3,
+    "sub_title": "Premium",
+    "title": "Growth Package",
+    "price": {
+      "currency": "$",
+      "price": "1999",
+      "under_dot": "99",
+      "price_desc": "/project"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Custom Website + Mobile App" },
+      { "icon": "fa-light fa-check", "text": "Full Brand + Marketing Collateral" },
+      { "icon": "fa-light fa-check", "text": "Advanced E-commerce (unlimited products)" },
+      { "icon": "fa-light fa-check", "text": "2D/3D Animation Videos" },
+      { "icon": "fa-light fa-check", "text": "Comprehensive SEO + Digital Marketing" },
+      { "icon": "fa-light fa-check", "text": "Creative Content + Copywriting Suite" }
+    ]
+  },
+  {
+    "id": 4,
+    "sub_title": "Enterprise",
+    "title": "Complete Solution",
+    "price": {
+      "currency": "$",
+      "price": "3999",
+      "under_dot": "99",
+      "price_desc": "/project"
+    },
+    "list": [
+      { "icon": "fa-light fa-check", "text": "Multi-platform Development (Web + Mobile + Desktop)" },
+      { "icon": "fa-light fa-check", "text": "Full Brand Ecosystem + Marketing Suite" },
+      { "icon": "fa-light fa-check", "text": "Enterprise E-commerce + CRM Integration" },
+      { "icon": "fa-light fa-check", "text": "Professional Animation + Video Production" },
+      { "icon": "fa-light fa-check", "text": "Advanced SEO + Full Digital Marketing Campaign" },
+      { "icon": "fa-light fa-check", "text": "Complete Content Strategy + Copywriting" }
+    ]
+  }
+]

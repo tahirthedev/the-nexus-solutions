@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Installation Accessories",
+        "count": 1
+    },
+    {
+        "id": 2,
+        "name": "Business Advice",
+        "count": 8
+    },
+    {
+        "id": 3,
+        "name": "Stock market",
+        "count": 3
+    },
+    {
+        "id": 4,
+        "name": "Regular start",
+        "count": 5
+    },
+    {
+        "id": 5,
+        "name": "Finance & Banking",
+        "count": 1
+    },
+    {
+        "id": 6,
+        "name": "Started with projects",
+        "count": 3
+    },
+    {
+        "id": 7,
+        "name": "Corporate standup",
+        "count": 5
+    }
+]
