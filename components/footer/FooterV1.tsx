@@ -19,7 +19,7 @@ const FooterV1 = () => {
                                         <div className="te-footer-logo">
                                             <Link href="/">
                                                 <Image
-                                                    src="/images/logo/logo.png"
+                                                    src="/images/logo/nexus logo site.png"
                                                     alt="Image"
                                                     width={187}
                                                     height={56}
