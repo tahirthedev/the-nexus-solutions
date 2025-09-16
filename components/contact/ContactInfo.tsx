@@ -21,7 +21,7 @@ const ContactInfo = () => {
                                 <h3 className="title">Email Address</h3>
                             </div>
                             <div className="content-wrapper">
-                                <p>info@thenexussolutions.com <br/> contact@thenexussolutions.com</p>
+                                <p>info@thenexusdigitals.com <br/> contact@thenexusdigitals.com</p>
                             </div>
                         </div>
                     </div>

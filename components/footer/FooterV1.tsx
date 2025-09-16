@@ -54,7 +54,7 @@ const FooterV1 = () => {
                                                         <i className="fa-solid fa-envelope"></i>
                                                     </div>
                                                     <div className="contact-text">
-                                                        <Link href="mailto:info@thenexussolutions.com"><span>info@thenexussolutions.com</span></Link>
+                                                        <Link href="mailto:info@thenexusdigitals.com"><span>info@thenexusdigitals.com</span></Link>
                                                     </div>
                                                 </li>
                                                 <li>
