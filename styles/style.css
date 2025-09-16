@@ -3398,16 +3398,19 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   z-index: 2; }
 
 .gradient-title {
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background-repeat: repeat; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent;
+   */
+  color: #02C173;
   font-size: 84px;
   font-weight: 700;
   letter-spacing: -2.52px;
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-position: center bottom;
-  background-size: cover;
+  /* background-position: center bottom; */
+  background: none;
+  /* background-size: cover; */
   text-align: center;
   line-height: initial;
   margin-bottom: 40px; }

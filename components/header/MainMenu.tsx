@@ -38,13 +38,6 @@ const MainMenu = ({ toggleSubMenu }: MainMenuProps) => {
                             <li className='te-list-item'><Link href="/project-details/1">Project Details Page</Link></li>
                         </ul>
                     </li>
-                    <li className="te-dropdown">
-                        <Link href="/blog" onClick={toggleSubMenu} className='dropdown-expand'>Blog</Link>
-                        <ul className="te-submenu">
-                            <li className='te-list-item'><Link href="/blog">Blog Page</Link></li>
-                            <li className='te-list-item'><Link href="/blog-details/1">Blog Details Page</Link></li>
-                        </ul>
-                    </li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>

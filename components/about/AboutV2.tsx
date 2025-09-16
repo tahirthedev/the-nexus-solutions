@@ -15,7 +15,7 @@ const AboutV2 = () => {
                                     <div className="te-main-img-inner">
                                         <Image
                                             className="tilt-animate"
-                                            src="/images/about/about-card-3.jpg"
+                                            src="/images/about/about-2.webp"
                                             alt="icon"
                                             width={544}
                                             height={488}
@@ -24,7 +24,7 @@ const AboutV2 = () => {
                                         <div className="image-two">
                                             <Image
                                                 className="tilt-animate"
-                                                src="/images/about/about-card-4.jpg"
+                                                src="/images/about/about-card-4.webp"
                                                 alt="icon"
                                                 width={300}
                                                 height={327}

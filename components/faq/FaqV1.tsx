@@ -54,7 +54,7 @@ const FaqV1 = () => {
                             <div className="image-card">
                                 <Image
                                     className="tilt-animate"
-                                    src="/images/faq/image-1.jpg"
+                                    src="/images/about/istockphoto-2162555396-640x640.jpg"
                                     alt="Image"
                                     width={420}
                                     height={450}

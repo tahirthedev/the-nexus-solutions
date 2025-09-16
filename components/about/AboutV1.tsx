@@ -65,7 +65,7 @@ const AboutV1 = () => {
                             <div className="image-card">
                                 <Image
                                     className="tilt-animate"
-                                    src="/images/about/about-card-1.jpg"
+                                    src="/images/about/Evoking-with-conviction-for-every-brainstormed-idea.webp"
                                     alt="icon"
                                     width={526}
                                     height={386}
@@ -84,7 +84,7 @@ const AboutV1 = () => {
                             <div className="image-card">
                                 <Image
                                     className="tilt-animate"
-                                    src="/images/about/about-card-2.jpg"
+                                    src="/images/about/Structuring Advanced Concepts.webp"
                                     alt="icon"
                                     width={526}
                                     height={386}

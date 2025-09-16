@@ -1,10 +1,11 @@
 import ClientLayout from "@/components/layouts/ClientLayout";
+import VideoHero from '@/components/hero/VideoHero';
 import SliderV1 from '@/components/slider/SliderV1';
 import AboutV1 from '@/components/about/AboutV1';
 import NewsLetterV1 from '@/components/newLetter/NewsLetterV1';
 import ProcessV1 from '@/components/process/ProcessV1';
 import TestimonialV1 from '@/components/testimonial/TestimonialV1';
-import BlogV1 from '@/components/blog/BlogV1';
+// import BlogV1 from '@/components/blog/BlogV1';
 import FaqV1 from "@/components/faq/FaqV1";
 import LatestServiceV1 from "@/components/latestService/LatestServiceV1";
 import ProcessV2 from "@/components/process/ProcessV2";
@@ -16,6 +17,7 @@ export default function Home() {
     return (
         <>
             <ClientLayout>
+                <VideoHero/>
                 <SliderV1 />
                 <LatestServiceV1 />
                 <AboutV1 />
@@ -26,7 +28,7 @@ export default function Home() {
                 <TestimonialV1 testimonialClass="default-testimonial"/>
                 <PricingPlans />
                 <FaqV1 />
-                <BlogV1 />
+                {/* <BlogV1 /> */}
             </ClientLayout>
         </>
     );
