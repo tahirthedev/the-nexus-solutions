@@ -299,7 +299,7 @@ const ServiceDetailsContent = ({ serviceId, serviceData }: ServiceDetailsContent
                                 <div className="col-lg-6">
                                     <Image
                                         className="w-100"
-                                        src="/images/service/service-details.jpg"
+                                        src="/images/service/wd-1.png"
                                         alt="image"
                                         width={420}
                                         height={300}
@@ -308,7 +308,7 @@ const ServiceDetailsContent = ({ serviceId, serviceData }: ServiceDetailsContent
                                 <div className="col-lg-6">
                                     <Image
                                         className="w-100"
-                                        src="/images/service/service-details-2.jpg"
+                                        src="/images/service/1.png"
                                         alt="image"
                                         width={420}
                                         height={300}

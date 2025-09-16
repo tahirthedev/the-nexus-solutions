@@ -18,7 +18,7 @@ const MainMenu = ({ toggleSubMenu }: MainMenuProps) => {
                     <li className="te-dropdown">
                         <Link href="/services" onClick={toggleSubMenu} className='dropdown-expand'>Services</Link>
                         <ul className="te-submenu">
-                            <li className='te-list-item'><Link href="/services">All Services</Link></li>
+                            {/* <li className='te-list-item'><Link href="/services">All Services</Link></li> */}
                             <li className='te-list-item'><Link href="/service-details/1">Website Development</Link></li>
                             <li className='te-list-item'><Link href="/service-details/2">Logo Design</Link></li>
                             <li className='te-list-item'><Link href="/service-details/3">Ecommerce Solutions</Link></li>
