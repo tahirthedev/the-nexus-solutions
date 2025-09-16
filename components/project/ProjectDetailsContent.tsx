@@ -3,11 +3,34 @@ import React from 'react';
 import Image from "next/image";
 
 type projectInfoData = {
+    id: number;
     title: string;
+    shortDesc: string;
+    client: string;
+    value: string;
+    duration: string;
+    category: string;
+    technologies: string[];
+    features: string[];
+    description: string;
+    thumb?: string;
+    heroImage?: string;
+    thumbLink?: string;
 }
 
 const ProjectDetailsContent = ({ projectInfo } : { projectInfo:projectInfoData }) => {
-    const { title } = projectInfo
+    const { 
+        title, 
+        shortDesc, 
+        client, 
+        value, 
+        duration, 
+        category, 
+        technologies, 
+        features, 
+        description,
+        heroImage 
+    } = projectInfo
 
     return (
         <>
@@ -23,8 +46,8 @@ const ProjectDetailsContent = ({ projectInfo } : { projectInfo:projectInfoData }
                                 </div>
                                 <div className="image">
                                     <Image
-                                        src="/images/project/project-details.jpg"
-                                        alt="image"
+                                        src={`/images/project/${heroImage || 'project-details.jpg'}`}
+                                        alt={`${title} - Project Hero Image`}
                                         width={1290}
                                         height={545}
                                     />
@@ -36,86 +59,43 @@ const ProjectDetailsContent = ({ projectInfo } : { projectInfo:projectInfoData }
                             <div className="te-project-details-wrapper">
                                 <div className="project-details-overview">
                                     <div className="content">
-                                        <p>Aliquam eros justo, posuere loborti vive rra laoreet matti ullamc orper posu
-                                            ere viverra .Aliquam eros justo, posuere lobortis non, vive rra laoreet
-                                            augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo,
-                                            posuere loborti viverra laoreet mat ullamcorper posue Aliquam eros justo,
-                                            posuere lobortis non laoreet augue matt fermentum laoreet augue mattis
-                                            fermentum ullamcorper viverra laoreet Aliquam eros</p>
-                                        <p></p>
-                                        <p>justo, posuere loborti viverra laoreet mat laoreet augue mattis fermentum
-                                            ullamcorper viverralaoreet Aliquam eros justo, Aliquam eros justo, posuere
-                                            loborti vive rra laoreet matti ullamc orper posu ere viverra .Aliquam eros
-                                            justo, posuere lobortis non, vive rra laoreaugue mattis fermentum
-                                            ullamcorper viverra laoreet Aliquam eros jus</p>
-                                        <p></p>
-                                        <p></p>
+                                        <p>{shortDesc}</p>
+                                        
+                                        <p>{description}</p>
+                                        
                                         <br/>
-                                        <h3 className="mb-20">CXhalleng with ai</h3>
-                                        <p>eet augue mattis fermentum ullamcorper viverralaoreet Aliquam eros justo,
-                                            Aliquam eros justo, posuere loborti vive rra laoreet matti ullamc orper posu
-                                            ere viverra .Aliquam eros justo, posuere lobortis non, vive rra laoreaugue
-                                            mattis fermentum ullamcorper viverra laoreet Aliquam eros justo, posuere
-                                            loborti viverra laoreet mat ullamcorper posue Aliquam eros justo, posuere
-                                            lobortis non laoreet augue mattis fermentum laoreet augue mattis fermentum
-                                            ullamcorper viverra laoreet Aliquam eros justo, posuere loborti viverra
-                                            laoreet mat</p>
-                                        <p>Skills in AI, data science, business development, and a deep understanding of
-                                            the target industry are valuable Regulations vary by country, but many
-                                            governments are working on AI ethics and governance frameworks.</p>
-                                        <p></p>
-                                        <p>Aliquam eros justo, posuere loborti vive rra laoreet matti ullamc orper posu
-                                            ere viverra .Aliquam eros justo, posuere lobortis non, vive rra laoreet
-                                            augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo,
-                                            posuere loborti viverra laoreet mat ullamcorper posue Aliquam eros justo,
-                                            posuere lobortis non laoreet augue matt fermentum laoreet augue mattis
-                                            fermentum ullamcorper viverra laoreet Aliquam eros justo, </p>
+                                        <h3 className="mb-20">Project Objectives & Solutions</h3>
+                                        <p>This project represents our commitment to delivering cutting-edge digital solutions that drive real business results. Our team leveraged the latest technologies and industry best practices to create a platform that not only meets current needs but is also scalable for future growth.</p>
+                                        
+                                        <p>Through careful planning, agile development methodologies, and close collaboration with the client, we were able to deliver a solution that exceeds expectations and provides measurable business value.</p>
+                                        
+                                        <p>The implementation showcases our expertise in modern development frameworks, user experience design, and performance optimization, resulting in a robust platform that serves as a strong foundation for the client's digital presence.</p>
                                     </div>
                                     <div className="row mt-40">
-                                        <h3 className="mb-30">Project Challenge</h3>
+                                        <h3 className="mb-30">Key Features & Technologies</h3>
 
                                         <div className="col-lg-6">
                                             <div className="te-list-item-wrapper">
-                                                <div className="te-list-item">
-                                        <span className="icon">
-                                            <i className="fa-solid fa-check"></i>
-                                        </span>
-                                                    <span className="text">Aliquam eros justo, posuere loborti vive rra laoreet</span>
-                                                </div>
-                                                <div className="te-list-item">
-                                        <span className="icon">
-                                            <i className="fa-solid fa-check"></i>
-                                        </span>
-                                                    <span className="text">laoreet matti ullameros justo,c orper posu ere vi</span>
-                                                </div>
-                                                <div className="te-list-item">
-                                                <span className="icon">
-                                                    <i className="fa-solid fa-check"></i>
-                                                </span>
-                                                    <span className="text">Aliquam eros justo, posuere leros justo,oborti </span>
-                                                </div>
+                                                {features.slice(0, Math.ceil(features.length / 2)).map((feature, index) => (
+                                                    <div key={index} className="te-list-item">
+                                                        <span className="icon">
+                                                            <i className="fa-solid fa-check"></i>
+                                                        </span>
+                                                        <span className="text">{feature}</span>
+                                                    </div>
+                                                ))}
                                             </div>
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="te-list-item-wrapper">
-                                                <div className="te-list-item">
-                                        <span className="icon">
-                                            <i className="fa-solid fa-check"></i>
-                                        </span>
-                                                    <span className="text">Aliquam eros justo, posuere loborti vive rra laoreet</span>
-                                                </div>
-                                                <div className="te-list-item">
-                                        <span className="icon">
-                                            <i className="fa-solid fa-check"></i>
-                                        </span>
-                                                    <span className="text">laoreet matti ullameros justo,c orper posu ere vi</span>
-                                                </div>
-                                                <div className="te-list-item">
-                                        <span className="icon">
-                                            <i className="fa-solid fa-check"></i>
-                                        </span>
-                                                    <span className="text">Aliquam eros justo, posuere leros justo,oborti </span>
-                                                </div>
+                                                {features.slice(Math.ceil(features.length / 2)).map((feature, index) => (
+                                                    <div key={index} className="te-list-item">
+                                                        <span className="icon">
+                                                            <i className="fa-solid fa-check"></i>
+                                                        </span>
+                                                        <span className="text">{feature}</span>
+                                                    </div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
@@ -127,23 +107,31 @@ const ProjectDetailsContent = ({ projectInfo } : { projectInfo:projectInfoData }
                                 <div className="project-info">
                                     <div className="te-single-meta">
                                         <span className="meta-title">Client</span>
-                                        <span className="meta-text">Sandi leo rakiul</span>
+                                        <span className="meta-text">{client}</span>
                                     </div>
                                     <div className="te-single-meta">
-                                        <span className="meta-title">150000  USD</span>
-                                        <span className="meta-text">Data Mind Solutions</span>
+                                        <span className="meta-title">Project Value</span>
+                                        <span className="meta-text">{value}</span>
                                     </div>
                                     <div className="te-single-meta">
-                                        <span className="meta-title">Customer</span>
-                                        <span className="meta-text">Hs robin</span>
+                                        <span className="meta-title">Duration</span>
+                                        <span className="meta-text">{duration}</span>
                                     </div>
                                     <div className="te-single-meta">
                                         <span className="meta-title">Category</span>
-                                        <span className="meta-text">Planing, AI Boost Pro</span>
+                                        <span className="meta-text">{category}</span>
                                     </div>
                                     <div className="te-single-meta">
-                                        <span className="meta-title">Date</span>
-                                        <span className="meta-text">Nov 19, 2022</span>
+                                        <span className="meta-title">Technologies</span>
+                                        <span className="meta-text">{technologies.join(', ')}</span>
+                                    </div>
+                                    <div className="te-single-meta">
+                                        <span className="meta-title">Status</span>
+                                        <span className="meta-text">Completed</span>
+                                    </div>
+                                    <div className="te-single-meta">
+                                        <span className="meta-title">Team</span>
+                                        <span className="meta-text">The Nexus Solutions</span>
                                     </div>
                                 </div>
                             </div>

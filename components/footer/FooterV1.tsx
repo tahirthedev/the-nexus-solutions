@@ -46,7 +46,7 @@ const FooterV1 = () => {
                                                         <i className="fa-solid fa-phone"></i>
                                                     </div>
                                                     <div className="contact-text">
-                                                        <Link href="tel:+5550129">(629) 555-0129</Link>
+                                                        <Link href="tel:+18042939240">(804) 293-9240</Link>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -54,7 +54,7 @@ const FooterV1 = () => {
                                                         <i className="fa-solid fa-envelope"></i>
                                                     </div>
                                                     <div className="contact-text">
-                                                        <Link href="mailto:hello@nexussolutions.com"><span>hello@nexussolutions.com</span></Link>
+                                                        <Link href="mailto:info@thenexussolutions.com"><span>info@thenexussolutions.com</span></Link>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -62,7 +62,7 @@ const FooterV1 = () => {
                                                         <i className="fa-solid fa-location-dot"></i>
                                                     </div>
                                                     <div className="contact-text">
-                                                        <span>6391 Elgin St. Celina, 10299</span>
+                                                        <span>2006 Broken Oak Street<br/>San Antonio - Texas 78232-3106</span>
                                                     </div>
                                                 </li>
                                             </ul>

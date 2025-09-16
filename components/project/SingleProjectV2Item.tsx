@@ -8,6 +8,13 @@ type itemData = {
     title: string;
     thumbLink: string;
     category: string;
+    shortDesc?: string;
+    client?: string;
+    value?: string;
+    duration?: string;
+    technologies?: string[];
+    features?: string[];
+    description?: string;
 }
 const SingleProjectV1Item = ( { item } : { item: itemData; index: number } ) => {
     const { id, thumb, title, thumbLink, category } = item
@@ -16,8 +23,8 @@ const SingleProjectV1Item = ( { item } : { item: itemData; index: number } ) => 
             <div className="portfolio-item">
                 <div className="portfolio-img">
                     <Image
-                        src={`/images/project/${thumb}`}
-                        alt="image"
+                        src={`/images/service/${thumb}`}
+                        alt={`${title} - Project Image`}
                         width={920}
                         height={800}
                     />

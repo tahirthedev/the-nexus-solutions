@@ -31,12 +31,10 @@ const ProjectV2 = ({style, partial = true } : ProjectV2Props ) => {
                                             <div>
                                                 <span className="short-title">Latest Portfolio</span>
                                             </div>
-                                            <h2 className="title">Transform your <span>startup</span> with <br/> AI capabilities
+                                            <h2 className="title">Transform Your Business with <span>Digital Innovation</span>
                                             </h2>
                                             <div className="te-section-desc">
-                                                <p>It is a long established fact that a reader will be distrol acted bioiiy
-                                                    desig the rea dablea <br/> content of a page when looking at its layout this
-                                                    is Thoiie point o</p>
+                                                <p>Explore our comprehensive portfolio of successful digital projects across various industries. <br/> From e-commerce platforms to mobile apps, we deliver solutions that drive real business growth.</p>
                                             </div>
                                         </div>
                                     </div>

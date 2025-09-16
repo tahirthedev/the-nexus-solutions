@@ -1,58 +1,86 @@
 [
     {
         "id": 1,
-        "thumb": "p-1.jpg",
+        "thumb": "boutique-ecom.png",
         "thumbLink": "project-details",
-        "title": "Machine Automation",
-        "category": "Automation"
+        "title": "TechStyle Boutique E-commerce Platform",
+        "category": "E-commerce Development",
+        "shortDesc": "Premium fashion e-commerce platform with AI-powered recommendations",
+        "client": "TechStyle Boutique",
+        "value": "$185,000 USD",
+        "duration": "8 Months",
+        "technologies": ["React", "Next.js", "TypeScript", "MongoDB", "Stripe"],
+        "features": ["AI Product Recommendations", "Real-time Inventory", "Secure Payments", "Mobile Responsive"],
+        "description": "Comprehensive e-commerce solution that increased conversion rates by 340% and reduced load times by 65%"
     },
     {
         "id": 2,
-        "thumb": "p-2.jpg",
+        "thumb": "med-apppng.png",
         "thumbLink": "project-details",
-        "title":  "Blockchain Development",
-        "category": "Blockchain"
+        "title": "MedTech Solutions Corporate Platform",
+        "category": "Healthcare Technology",
+        "shortDesc": "Healthcare technology company's complete digital transformation",
+        "client": "MedTech Solutions Inc.",
+        "value": "$220,000 USD",
+        "duration": "10 Months",
+        "technologies": ["React", "Node.js", "PostgreSQL", "AWS", "WebRTC"],
+        "features": ["Patient Portal", "Telemedicine", "HIPAA Compliance", "Real-time Chat"],
+        "description": "HIPAA-compliant healthcare platform serving 50,000+ patients with secure telemedicine capabilities"
     },
     {
         "id": 3,
-        "thumb": "p-3.jpg",
+        "thumb": "edu-platform.png",
         "thumbLink": "project-details",
-        "title":  "AI Automation",
-        "category": "Automation"
+        "title": "EduLearn Mobile Learning App",
+        "category": "EdTech Mobile Development",
+        "shortDesc": "Cross-platform educational mobile application with interactive courses",
+        "client": "EduLearn Academy",
+        "value": "$145,000 USD",
+        "duration": "6 Months",
+        "technologies": ["React Native", "Firebase", "Redux", "Node.js"],
+        "features": ["Offline Learning", "Progress Tracking", "Interactive Quizzes", "Push Notifications"],
+        "description": "Educational app with 100,000+ downloads, featuring gamified learning and comprehensive progress analytics"
     },
     {
         "id": 4,
-        "thumb": "p-4.jpg",
+        "thumb": "green-branding.webp",
         "thumbLink": "project-details",
-        "title":  "Vector Creator",
-        "category": "Technology"
+        "title": "GreenEnergy Complete Brand Identity",
+        "category": "Brand Identity & Web Design",
+        "shortDesc": "Sustainable energy company's complete rebrand including logo and website",
+        "client": "GreenEnergy Solutions",
+        "value": "$85,000 USD",
+        "duration": "4 Months",
+        "technologies": ["Adobe Creative Suite", "Figma", "Next.js", "Framer Motion"],
+        "features": ["Logo Design", "Brand Guidelines", "Website Design", "Marketing Materials"],
+        "description": "Complete brand transformation that increased brand recognition by 275% and website engagement by 180%"
     },
     {
         "id": 5,
-        "thumb": "p-5.jpg",
+        "thumb": "fit-life.png",
         "thumbLink": "project-details",
-        "title":  "NFT Creator",
-        "category": "NFT"
+        "title": "FitLife Digital Marketing Campaign",
+        "category": "Digital Marketing & SEO",
+        "shortDesc": "Comprehensive 360° digital marketing strategy for fitness startup",
+        "client": "FitLife Wellness",
+        "value": "$95,000 USD",
+        "duration": "12 Months",
+        "technologies": ["Google Analytics", "Facebook Ads", "SEMrush", "Mailchimp"],
+        "features": ["SEO Optimization", "Social Media Marketing", "Content Strategy", "Email Campaigns"],
+        "description": "Marketing campaign that generated 450% ROI, increased organic traffic by 320%, and acquired 15,000+ new customers"
     },
     {
         "id": 6,
-        "thumb": "p-6.jpg",
+        "thumb": "custom-crm.png",
         "thumbLink": "project-details",
-        "title":  "Data Creators",
-        "category": "Technology"
-    },
-    {
-        "id": 7,
-        "thumb": "p-7.jpg",
-        "thumbLink": "project-details",
-        "title":  "Data Creators",
-        "category": "Technology"
-    },
-    {
-        "id": 8,
-        "thumb": "p-8.jpg",
-        "thumbLink": "project-details",
-        "title":  "Data Creators",
-        "category": "Technology"
+        "title": "NewsHub Custom CMS Platform",
+        "category": "Custom CMS Development",
+        "shortDesc": "Enterprise-grade content management system for digital news platform",
+        "client": "NewsHub Media",
+        "value": "$165,000 USD",
+        "duration": "7 Months",
+        "technologies": ["Next.js", "Headless CMS", "GraphQL", "MongoDB", "Redis"],
+        "features": ["Real-time Publishing", "Multi-user Management", "SEO Tools", "Analytics Dashboard"],
+        "description": "Custom CMS handling 1M+ monthly visitors with advanced editorial workflows and automated content distribution"
     }
 ]

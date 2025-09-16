@@ -29,7 +29,7 @@ const SingleProjectV1Item = ({ item, index } : { item: itemData; index: number }
                         <div className="image">
                             <Image
                                 src={`/images/service/${thumb}`}
-                                alt="image"
+                                alt={`${title} - Project Thumbnail`}
                                 width={250}
                                 height={120}
                             />

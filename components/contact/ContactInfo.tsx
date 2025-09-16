@@ -13,7 +13,7 @@ const ContactInfo = () => {
                                 <h3 className="title">Address</h3>
                             </div>
                             <div className="content-wrapper">
-                                <p>Dhaka 102, utl 1216, road 45 house <br/> shantighar rahuta, 1213</p>
+                                <p>2006 Broken Oak Street <br/> San Antonio - Texas <br/> 78232-3106</p>
                             </div>
                         </div>
                         <div className="contact-info-inner">
@@ -21,7 +21,7 @@ const ContactInfo = () => {
                                 <h3 className="title">Email Address</h3>
                             </div>
                             <div className="content-wrapper">
-                                <p>ijmnhhasan000@yourmail.com <br/> hhasan000@yourmail.com</p>
+                                <p>info@thenexussolutions.com <br/> contact@thenexussolutions.com</p>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ const ContactInfo = () => {
                                 <h3 className="title">Phone number</h3>
                             </div>
                             <div className="content-wrapper">
-                                <p>88-0123-45-678 <br/> 24 hour open </p>
+                                <p>(804) 293-9240 <br/> 24 hour support </p>
                             </div>
                         </div>
                         <div className="contact-info-inner">

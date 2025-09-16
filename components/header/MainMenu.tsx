@@ -35,7 +35,6 @@ const MainMenu = ({ toggleSubMenu }: MainMenuProps) => {
                         <Link href="/projects" onClick={toggleSubMenu} className='dropdown-expand'>Projects</Link>
                         <ul className="te-submenu">
                             <li className='te-list-item'><Link href="/projects">Project Page</Link></li>
-                            <li className='te-list-item'><Link href="/project-details/1">Project Details Page</Link></li>
                         </ul>
                     </li>
                     <li><Link href="/contact">Contact</Link></li>

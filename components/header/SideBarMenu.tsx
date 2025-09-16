@@ -39,10 +39,10 @@ const SideBarMenu = ({ isMenuActive, closeMenu, toggleSubMenu }: SideBarMenuProp
                             <div className="te-menu-sidebar-single-widget">
                                 <h5 className="te-menu-sidebar-title">Contact Info</h5>
                                 <div className="te-header-contact-info">
-                                    <span><i className="fa-solid fa-location-dot"></i>6391 Elgin St. Celina, 10299</span>
-                                    <span><Link href="mailto:hello@nexussolutions.com"><i
-                                        className="fa-solid fa-envelope"></i>hello@nexussolutions.com</Link> </span>
-                                    <span><Link href="tel:+16295550129"><i className="fa-solid fa-phone"></i>(629) 555-0129</Link></span>
+                                    <span><i className="fa-solid fa-location-dot"></i>2006 Broken Oak Street, San Antonio - Texas 78232-3106</span>
+                                    <span><Link href="mailto:info@thenexussolutions.com"><i
+                                        className="fa-solid fa-envelope"></i>info@thenexussolutions.com</Link> </span>
+                                    <span><Link href="tel:+18042939240"><i className="fa-solid fa-phone"></i>(804) 293-9240</Link></span>
                                 </div>
                                 <div className="te-social-profile">
                                     <SocialShare />
