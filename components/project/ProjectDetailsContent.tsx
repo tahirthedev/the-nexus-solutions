@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Image from "next/image";
 
 type projectInfoData = {
     id: number;
@@ -14,7 +13,6 @@ type projectInfoData = {
     features: string[];
     description: string;
     thumb?: string;
-    heroImage?: string;
     thumbLink?: string;
 }
 
@@ -28,8 +26,7 @@ const ProjectDetailsContent = ({ projectInfo } : { projectInfo:projectInfoData }
         category, 
         technologies, 
         features, 
-        description,
-        heroImage 
+        description 
     } = projectInfo
 
     return (
@@ -37,28 +34,11 @@ const ProjectDetailsContent = ({ projectInfo } : { projectInfo:projectInfoData }
             <div className="project-details-page">
                 <div className="container">
                     <div className="row gy-5">
-                        <div className="col-12">
-                            <div className="project-details">
-                                <div className="content">
-                                    <div className="text">
-                                        <h2 className="title">{title}</h2>
-                                    </div>
-                                </div>
-                                <div className="image">
-                                    <Image
-                                        src={`/images/project/${heroImage || 'project-details.jpg'}`}
-                                        alt={`${title} - Project Hero Image`}
-                                        width={1290}
-                                        height={545}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
                         <div className="col-lg-8">
                             <div className="te-project-details-wrapper">
                                 <div className="project-details-overview">
                                     <div className="content">
+                                        <h2 className="title mb-4">{title}</h2>
                                         <p>{shortDesc}</p>
                                         
                                         <p>{description}</p>
