@@ -4,8 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "NetFusion",
-    description: "AI Powered Startup & Technology Next JS Template",
+    title: "The Nexus Digitals",
+    description: "All in one solution to your Digital needs",
 };
 
 export default function RootLayout({
