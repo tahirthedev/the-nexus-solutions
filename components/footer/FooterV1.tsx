@@ -46,7 +46,7 @@ const FooterV1 = () => {
                                                         <i className="fa-solid fa-phone"></i>
                                                     </div>
                                                     <div className="contact-text">
-                                                        <Link href="tel:+6824289881">6824289881</Link>
+                                                        <Link href="tel:+16824289881">(682) 428-9881</Link>
                                                     </div>
                                                 </li>
                                                 <li>
