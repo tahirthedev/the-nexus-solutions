@@ -32,6 +32,7 @@ const SingleLatestServiceV2 = ({ item, index } : { item: itemData; index: number
                                         alt={title}
                                         width={35}
                                         height={35}
+                                        className='icons'
                                     />
                                 </div>
                                 <h3 className="title"><Link href={`/service-details/${id}`}>{title}</Link></h3>

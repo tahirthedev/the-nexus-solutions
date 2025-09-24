@@ -33,7 +33,7 @@ const NewsLetterV1 = () => {
                                             <div className="single-field">
                                                 <input type="email" placeholder="Enter Your Email"/>
                                             </div>
-                                            <button className="submit-btn" type="submit">Subscribe Now <i
+                                            <button className="te-theme-btn blue-btn" type="submit">Subscribe Now <i
                                                 className="fa fa-solid fa-arrow-right"></i></button>
                                         </div>
                                     </form>

@@ -20,7 +20,7 @@ const Hero = () => {
                     objectFit: 'cover'
                 }}
             >
-                <source src="/images/banner/Website logo.mp4" type="video/mp4" />
+                <source src="/images/banner/New website video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>

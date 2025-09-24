@@ -33,6 +33,7 @@ const SingleLatestServiceV1 = ({ item, index } : { item: itemData; index: number
                             alt={title}
                             width={45}
                             height={45}
+                            className='icons'
                         />
                     </div>
                     <div className="title-wrapper">
