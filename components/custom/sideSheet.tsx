@@ -8,34 +8,32 @@ export default function FloatingSheetButton() {
     <div>
       {/* Container for button + sheet */}
       <div
-        style={{
-          position: "fixed",
-          top: "50%",
-          right: 0,
-          transform: "translateY(-50%)",
-          zIndex: 1000,
-          display: "flex",
-          flexDirection: "row-reverse", // button attached to the sheet
-          height: "450px",
-          width: open ? "380px" : "50px", // expand width when open
-          transition: "width 0.3s ease",
-          overflow: "hidden", // no scroll on container
-        }}
+       style={{
+        position: "fixed",
+        top: "50%",
+        right: "-50px", // move 30px outside the viewport
+        transform: "translateY(-50%)",
+        zIndex: 1000,
+        display: "flex",
+        flexDirection: "row-reverse", // button attached to the sheet
+        height: "450px",
+        width: open ? "380px" : "100px", // expand width when open
+        transition: "width 0.3s ease",
+        overflow: "hidden", // no scroll on container
+      }}
       >
         {/* Sheet content */}
-        {open && (
-          <div
-            style={{
-              background: "#000",
-
-              padding: "0px 20px",
-              boxShadow: "-10px 0 40px #00000026",
-
-
-
-              overflow: "hidden", // remove scroll
-            }}
-          >
+        <div
+          style={{
+            background: "#000",
+            padding: "0px 20px",
+            boxShadow: "-10px 0 40px #00000026",
+            overflow: "hidden", // remove scroll
+            transform: open ? "translateX(0)" : "translateX(100%)",
+            transition: "transform 0.3s ease",
+            flex: 1,
+          }}
+        >
             <h2 style={{ fontSize: "20px" }}>Sign Up Now &</h2>
             <p style={{ fontSize: "20px" }}> Let’s Get Started</p>
 
@@ -64,7 +62,6 @@ export default function FloatingSheetButton() {
               </button>
             </form>
           </div>
-        )}
 
         {/* Vertical Button */}
         <div
@@ -72,7 +69,7 @@ export default function FloatingSheetButton() {
           style={{
             width: "50px",
 
-            height: "190px", // increased for padding
+            height: "300px", // increased to show full text
             background: "#02c173",
             display: "flex",
             alignItems: "center",
@@ -81,8 +78,9 @@ export default function FloatingSheetButton() {
             borderRadius: open ? "0" : "3px 0 0 3px",
             boxShadow: "0 0 40px #00000026",
             flexShrink: 0,
-            marginTop: "130px", // adjusted to center the taller button
+            marginTop: "75px", // adjusted to center the taller button
             padding: "20px 0", // added padding top and bottom
+            transition: "border-radius 0.3s ease",
           }}
         >
           <span
