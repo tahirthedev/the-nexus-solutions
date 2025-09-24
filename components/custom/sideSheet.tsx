@@ -59,7 +59,7 @@ export default function FloatingSheetButton() {
                 </div>
               </div>
               <textarea placeholder="Talk About Your Project" rows={3} className="p-2 rounded border" />
-              <button type="submit" className="te-theme-btn blue-btn" style={{borderRadius:"5px"}}>
+              <button type="submit" className="te-theme-btn blue-btn" style={{ borderRadius: "5px" }}>
                 Submit
               </button>
             </form>
@@ -68,36 +68,37 @@ export default function FloatingSheetButton() {
 
         {/* Vertical Button */}
         <div
-  onClick={() => setOpen(!open)}
-  style={{
-    width: "50px",
-    gap:"10px",
-    height: "150px", // smaller than sheet height
-    background: "#02c173",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    cursor: "pointer",
-    borderRadius: open ? "0" : "3px 0 0 3px",
-    boxShadow: "0 0 40px #00000026",
-    flexShrink: 0,
-    marginTop: "150px", // center vertically in the 450px container
-  }}
->
-  <span
-    style={{
-      transform: "rotate(-90deg)",
-      textTransform: "uppercase",
-      fontFamily: "Poppins, sans-serif",
-      fontWeight: "700",
-      color: "#fff",
-      fontSize: "16px",
-      whiteSpace: "nowrap",
-    }}
-  >
-    LET'S GET STARTED
-  </span>
-</div>
+          onClick={() => setOpen(!open)}
+          style={{
+            width: "50px",
+
+            height: "190px", // increased for padding
+            background: "#02c173",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+            borderRadius: open ? "0" : "3px 0 0 3px",
+            boxShadow: "0 0 40px #00000026",
+            flexShrink: 0,
+            marginTop: "130px", // adjusted to center the taller button
+            padding: "20px 0", // added padding top and bottom
+          }}
+        >
+          <span
+            style={{
+              transform: "rotate(-90deg)",
+              textTransform: "uppercase",
+              fontFamily: "Poppins, sans-serif",
+              fontWeight: "700",
+              color: "#fff",
+              fontSize: "16px",
+              whiteSpace: "nowrap",
+            }}
+          >
+            LET'S GET STARTED
+          </span>
+        </div>
 
       </div>
     </div>
