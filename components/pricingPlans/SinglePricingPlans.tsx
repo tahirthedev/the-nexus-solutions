@@ -65,7 +65,7 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
                 {list.map((item, idx) => (
                   <li className="price-list-item" key={idx}>
                     <i className={item.icon}></i>
-                    <span className="text">{item.text}</span>
+                    <span className="text" style={{userSelect:"auto"}}>{item.text}</span>
                   </li>
                 ))}
               </ul>
@@ -75,7 +75,7 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
           {/* Secondary Action — Stays at Bottom Right */}
           <div className="btn-wrapper btx">
             <Link href="/services" className="te-theme-btn blue-btn">
-              View Details <i className="fa-solid fa-eye"></i>
+              View Details 
             </Link>
           </div>
         </div>

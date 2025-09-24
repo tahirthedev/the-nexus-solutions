@@ -8,9 +8,15 @@ import {motion} from "framer-motion";
 type ProjectV2Props = {
     style?: string;
     partial?: boolean;
+    page?: number;
 };
 
-const ProjectV2 = ({style, partial = true } : ProjectV2Props ) => {
+const ProjectV2 = ({style, partial = true, page = 1 } : ProjectV2Props ) => {
+    const itemsPerPage = 3;
+    const totalItems = ProjectV2Data.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
 
     return (
         <>
@@ -57,8 +63,8 @@ const ProjectV2 = ({style, partial = true } : ProjectV2Props ) => {
                                         </>
                                         :
                                         <>
-                                            {ProjectV2Data.map((item, index) =>
-                                                <SingleProjectV2Item key={item.id} item={item} index={index} />
+                                            {ProjectV2Data.slice(startIndex, endIndex).map((item, index) =>
+                                                <SingleProjectV2Item key={item.id} item={item} index={index + startIndex} />
                                             )}
                                         </>
                                     }
@@ -73,7 +79,7 @@ const ProjectV2 = ({style, partial = true } : ProjectV2Props ) => {
                             :
                             <>
                                 <div className="col-12">
-                                    <Pagination alignment="justify-content-center"/>
+                                    <Pagination alignment="justify-content-center" currentPage={page} totalPages={totalPages}/>
                                 </div>
                             </>
                         }

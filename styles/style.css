@@ -48,6 +48,9 @@ Footer
 
 html,
 body {
+
+    user-select: text;
+
   height: 100%;
   font-size: 16px;
   font-weight: 400;
@@ -13919,6 +13922,10 @@ ul.children {
   margin-top:20px;
  
 }
+
+
+
+
 
 
 

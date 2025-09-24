@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "thumb": "boutique-ecom.png",
+        "thumb": "pro-1.png",
         "thumbLink": "project-details",
-        "title": "TechStyle Boutique E-commerce Platform",
+        "title": "Boutique E-commerce Platform",
         "category": "E-commerce Development",
         "shortDesc": "Premium fashion e-commerce platform with AI-powered recommendations",
         "client": "TechStyle Boutique",
@@ -15,7 +15,7 @@
     },
     {
         "id": 2,
-        "thumb": "med-apppng.png",
+        "thumb": "pro-2.png",
         "thumbLink": "project-details",
         "title": "MedTech Solutions Corporate Platform",
         "category": "Healthcare Technology",
@@ -29,7 +29,7 @@
     },
     {
         "id": 3,
-        "thumb": "edu-platform.png",
+        "thumb": "pro-3.png",
         "thumbLink": "project-details",
         "title": "EduLearn Mobile Learning App",
         "category": "EdTech Mobile Development",
@@ -57,7 +57,7 @@
     },
     {
         "id": 5,
-        "thumb": "fit-life.png",
+        "thumb": "pro-4.png",
         "thumbLink": "project-details",
         "title": "FitLife Digital Marketing Campaign",
         "category": "Digital Marketing & SEO",
@@ -71,7 +71,7 @@
     },
     {
         "id": 6,
-        "thumb": "custom-crm.png",
+        "thumb": "pro-5.png",
         "thumbLink": "project-details",
         "title": "NewsHub Custom CMS Platform",
         "category": "Custom CMS Development",

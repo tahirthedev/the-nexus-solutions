@@ -19,16 +19,16 @@ const MainMenu = ({ toggleSubMenu }: MainMenuProps) => {
                         <Link href="/services" onClick={toggleSubMenu} className='dropdown-expand'>Services</Link>
                         <ul className="te-submenu">
                             {/* <li className='te-list-item'><Link href="/services">All Services</Link></li> */}
-                            <li className='te-list-item'><Link href="/service-details/1">Website Development</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/2">Logo Design</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/3">Ecommerce Solutions</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/4">Animation</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/5">Illustration</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/6">Marketing Collateral</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/7">Mobile Apps</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/8">SEO Services</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/9">Digital Marketing</Link></li>
-                            <li className='te-list-item'><Link href="/service-details/10">Creative Copywriting</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/website-development">Website Development</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/logo-design">Logo Design</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/ecommerce-solutions">Ecommerce Solutions</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/animation">Animation</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/illustration">Illustration</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/marketing-collateral">Marketing Collateral</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/mobile-apps">Mobile Apps</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/seo-services">SEO Services</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/digital-marketing">Digital Marketing</Link></li>
+                            <li className='te-list-item'><Link href="/service-details/creative-copywriting">Creative Copywriting</Link></li>
                         </ul>
                     </li>
                     <li className="te-dropdown">

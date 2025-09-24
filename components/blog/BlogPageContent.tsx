@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Link from "next/link";
 import ModalVideo from 'react-modal-video';
-import Pagination from '../others/Pagination';
 import SearchWidget from '../widgets/SearchWidget';
 import RecentPostWidget from '../widgets/RecentPostWidget';
 import CategoriesWidget from '../widgets/CategoriesWidget';
@@ -108,7 +107,6 @@ const BlogPageContent = () => {
                                     <SingleBlogPost post={post} key={post.id} />
                                 )}
                             </article>
-                            <Pagination alignment="justify-content-left"/>
                         </div>
                         <div className="col-lg-4 order-1 order-lg-2">
                             <div className="sidebar">

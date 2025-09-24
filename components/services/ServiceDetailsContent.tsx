@@ -5,17 +5,18 @@ import ServicePricing from './ServicePricing';
 
 interface ServiceData {
     id: number;
+    slug: string;
     thumb: string;
     title: string;
     text: string;
 }
 
 interface ServiceDetailsContentProps {
-    serviceId: number;
+    serviceSlug: string;
     serviceData: ServiceData;
 }
 
-const ServiceDetailsContent = ({ serviceId, serviceData }: ServiceDetailsContentProps) => {
+const ServiceDetailsContent = ({ serviceSlug, serviceData }: ServiceDetailsContentProps) => {
     
     // Define service-specific content
     const getServiceContent = (id: number) => {
@@ -235,7 +236,7 @@ const ServiceDetailsContent = ({ serviceId, serviceData }: ServiceDetailsContent
         return serviceContent[id] || serviceContent[1]; // Default to Website Development if not found
     };
 
-    const content = getServiceContent(serviceId);
+    const content = getServiceContent(serviceData.id);
 
     return (
         <>
@@ -400,16 +401,16 @@ const ServiceDetailsContent = ({ serviceId, serviceData }: ServiceDetailsContent
                                         <h4 className="wp-block-heading">Our Service</h4>
                                     </div>
                                     <ul>
-                                        <li><Link href="/service-details/1" className={serviceId === 1 ? 'active' : ''}>Website Development</Link></li>
-                                        <li><Link href="/service-details/2" className={serviceId === 2 ? 'active' : ''}>Logo Design</Link></li>
-                                        <li><Link href="/service-details/3" className={serviceId === 3 ? 'active' : ''}>Ecommerce Solutions</Link></li>
-                                        <li><Link href="/service-details/4" className={serviceId === 4 ? 'active' : ''}>Animation</Link></li>
-                                        <li><Link href="/service-details/5" className={serviceId === 5 ? 'active' : ''}>Illustration</Link></li>
-                                        <li><Link href="/service-details/6" className={serviceId === 6 ? 'active' : ''}>Marketing Collateral</Link></li>
-                                        <li><Link href="/service-details/7" className={serviceId === 7 ? 'active' : ''}>Mobile Apps</Link></li>
-                                        <li><Link href="/service-details/8" className={serviceId === 8 ? 'active' : ''}>SEO Services</Link></li>
-                                        <li><Link href="/service-details/9" className={serviceId === 9 ? 'active' : ''}>Digital Marketing</Link></li>
-                                        <li><Link href="/service-details/10" className={serviceId === 10 ? 'active' : ''}>Creative Copywriting</Link></li>
+                                        <li><Link href="/service-details/website-development" className={serviceSlug === 'website-development' ? 'active' : ''}>Website Development</Link></li>
+                                        <li><Link href="/service-details/logo-design" className={serviceSlug === 'logo-design' ? 'active' : ''}>Logo Design</Link></li>
+                                        <li><Link href="/service-details/ecommerce-solutions" className={serviceSlug === 'ecommerce-solutions' ? 'active' : ''}>Ecommerce Solutions</Link></li>
+                                        <li><Link href="/service-details/animation" className={serviceSlug === 'animation' ? 'active' : ''}>Animation</Link></li>
+                                        <li><Link href="/service-details/illustration" className={serviceSlug === 'illustration' ? 'active' : ''}>Illustration</Link></li>
+                                        <li><Link href="/service-details/marketing-collateral" className={serviceSlug === 'marketing-collateral' ? 'active' : ''}>Marketing Collateral</Link></li>
+                                        <li><Link href="/service-details/mobile-apps" className={serviceSlug === 'mobile-apps' ? 'active' : ''}>Mobile Apps</Link></li>
+                                        <li><Link href="/service-details/seo-services" className={serviceSlug === 'seo-services' ? 'active' : ''}>SEO Services</Link></li>
+                                        <li><Link href="/service-details/digital-marketing" className={serviceSlug === 'digital-marketing' ? 'active' : ''}>Digital Marketing</Link></li>
+                                        <li><Link href="/service-details/creative-copywriting" className={serviceSlug === 'creative-copywriting' ? 'active' : ''}>Creative Copywriting</Link></li>
                                     </ul>
                                 </div>
                                 <Link href="#" className="pdf-download-btn">
@@ -431,7 +432,7 @@ const ServiceDetailsContent = ({ serviceId, serviceData }: ServiceDetailsContent
             </div>
             
             {/* Service-specific Pricing Section */}
-            <ServicePricing serviceId={serviceId} />
+            <ServicePricing serviceId={serviceData.id} />
         </>
     );
 };

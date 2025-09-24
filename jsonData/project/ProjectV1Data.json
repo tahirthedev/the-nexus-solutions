@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "thumb": "boutique-ecom.png",
+        "thumb": "pro-1.png",
         "thumbLink": "project-details",
         "title": "TechStyle Boutique E-commerce Platform",
         "shortDesc": "Premium fashion e-commerce platform with AI-powered recommendations and real-time inventory management",
@@ -15,7 +15,7 @@
     },
     {
         "id": 2,
-        "thumb": "med-apppng.png",
+        "thumb": "pro-2.png",
         "thumbLink": "project-details",
         "title": "MedTech Solutions Corporate Platform",
         "shortDesc": "Healthcare technology company's complete digital transformation with patient portal and telemedicine features",
@@ -29,7 +29,7 @@
     },
     {
         "id": 3,
-        "thumb": "edu-platform.png",
+        "thumb": "pro-3.png",
         "thumbLink": "project-details",
         "title": "EduLearn Mobile Learning App",
         "shortDesc": "Cross-platform educational mobile application with interactive courses and progress tracking",
@@ -57,7 +57,7 @@
     },
     {
         "id": 5,
-        "thumb": "fit-life.png",
+        "thumb": "pro-4.png",
         "thumbLink": "project-details",
         "title": "FitLife Digital Marketing Campaign",
         "shortDesc": "Comprehensive 360° digital marketing strategy for fitness startup with social media and SEO optimization",
@@ -71,7 +71,7 @@
     },
     {
         "id": 6,
-        "thumb": "custom-crm.png",
+        "thumb": "pro-5.png",
         "thumbLink": "project-details",
         "title": "NewsHub Custom CMS Platform",
         "shortDesc": "Enterprise-grade content management system for digital news platform with real-time publishing capabilities",
