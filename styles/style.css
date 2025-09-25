@@ -9357,7 +9357,7 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
 .te-list-item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
- 
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -12876,8 +12876,9 @@ ul.children {
 
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .te-subscribe-form-widget .mc4wp-form-fields {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -13818,8 +13819,10 @@ ul.children {
   border: 2px solid var(--green);
   background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
   color: var(--green);
-
 }
+
+
+
 
 .te-theme-btn:hover {
   color: #82ffc9;
@@ -14159,6 +14162,13 @@ ul.children {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
