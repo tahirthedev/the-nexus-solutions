@@ -12716,6 +12716,7 @@ ul.children {
   font-size: 16px;
   line-height: 24px;
   overflow: hidden;
+
 }
 
 .te-footer-widget .te-footer-widget-contact .footer-contact ul li .contact-text a:hover span {
@@ -13982,10 +13983,12 @@ ul.children {
 .sheet-title {
   font-size: 18px;
   font-weight: 600;
+  color:black;
+
 }
 
 .sheet-number {
-  color: #2563eb;
+  color: black;
   margin-top: 8px;
   font-size: 16px;
 }
@@ -14089,4 +14092,8 @@ ul.children {
   color: #555;
 }
 
-
+.tel{
+  display: flex; 
+  align-items:center;
+  gap:8px;
+}

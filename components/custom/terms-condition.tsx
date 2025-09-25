@@ -1,17 +1,16 @@
 'use client';
 import React from 'react';
 
-
 export default function TermsConditions() {
   return (
     <div className="terms-container">
       <h2>TERMS & CONDITIONS</h2>
       <p>
-        By using this website, you agree to be bound by these Terms and Conditions. Xpert Web Studio
+        By using this website, you agree to be bound by these Terms and Conditions. The Nexus Digitals
         reserves the right to change the Terms and Conditions at any time, for any reason.
       </p>
       <p>
-        The following terms and conditions apply to projects undertaken by xpertwebsudio.co.uk
+        The following terms and conditions apply to projects undertaken by thenexusdigitals.com
       </p>
 
       <h3>Revision Policy</h3>
@@ -24,7 +23,7 @@ export default function TermsConditions() {
       <h3>Refund Policy</h3>
       <p>
         In any occasion, any funds deposited will not be liable for a refund if the initial design
-        and concepts (after delivery) are approved, or a change is asked for unless Xpert Web Studio
+        and concepts (after delivery) are approved, or a change is asked for unless The Nexus Digitals
         cancels or ends your Contract for a reason other than your breach or non-execution.
       </p>
       <p>All requests for refund will be as per the following arrangement:</p>
@@ -44,19 +43,19 @@ export default function TermsConditions() {
         of these:
       </p>
       <ul>
-        <li>Toll free # 020 4592 1183</li>
+        <li>Phone: (682) 428-9881</li>
         <li>Live Chat</li>
-        <li>Email: info@xpertwebstudio.co.uk</li>
+        <li>Email: <a href="mailto:info@thenexusdigitals.com">info@thenexusdigitals.com</a></li>
       </ul>
       <p>
-        After the refund, the rights to your design would be transferred to Xpert Web Studio and you
+        After the refund, the rights to your design would be transferred to The Nexus Digitals and you
         will not legally display any version of the design sent by the company.
       </p>
 
       <h3>2.1 Website Usage Terms and Conditions</h3>
       <p>
-        Xpert Web Studio grants you a non-transferable, non-exclusive license to use the website and
-        the content of any emails you receive from Xpert Web Studio in accordance with these Terms
+        The Nexus Digitals grants you a non-transferable, non-exclusive license to use the website and
+        the content of any emails you receive from The Nexus Digitals in accordance with these Terms
         and Conditions. You may not copy, reproduce, modify, or create derivative works from any
         information provided except as allowed.
       </p>
@@ -72,14 +71,14 @@ export default function TermsConditions() {
       <ul>
         <li>You are responsible for all content you upload, post or transmit via the website.</li>
         <li>Do not upload content that is harmful, obscene, offensive, or violates any laws.</li>
-        <li>Xpert Web Studio reserves the right to edit or remove content that violates these terms.</li>
+        <li>The Nexus Digitals reserves the right to edit or remove content that violates these terms.</li>
       </ul>
 
       <h3>2.4 Agreement</h3>
       <p>You agree that you will not use the Website to:</p>
       <ul>
         <li>Transmit spam, bulk or unsolicited communications.</li>
-        <li>Pretend to be Xpert Web Studio or someone else.</li>
+        <li>Pretend to be The Nexus Digitals or someone else.</li>
         <li>Forge headers or manipulate identifiers.</li>
         <li>Disrupt normal flow of dialogue or negatively affect other users.</li>
         <li>Engage in illegal activities or collect personal data of others without authorization.</li>
@@ -87,8 +86,8 @@ export default function TermsConditions() {
 
       <h3>2.5 Standard Services Terms</h3>
       <p>
-        Xpert Web Studio will use reasonable endeavors to complete services within agreed timeframe.
-        Delays caused by the customer or breach of agreement are not Xpert Web Studio's liability.
+        The Nexus Digitals will use reasonable endeavors to complete services within agreed timeframe.
+        Delays caused by the customer or breach of agreement are not The Nexus Digitals' liability.
       </p>
 
       <h3>2.6 Intellectual Property Rights</h3>
@@ -104,7 +103,7 @@ export default function TermsConditions() {
       </p>
 
       <div className="terms-footer">
-        <p>Xpert Web Studio © All rights reserved.</p>
+        <p>The Nexus Digitals © All rights reserved.</p>
       </div>
     </div>
   );

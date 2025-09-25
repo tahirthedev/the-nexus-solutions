@@ -6,6 +6,7 @@ import TestimonialV3 from '@/components/testimonial/TestimonialV3';
 import AboutV2 from "@/components/about/AboutV2";
 import NewsLetterV1 from "@/components/newLetter/NewsLetterV1";
 import ClientLayout from "@/components/layouts/ClientLayout";
+import SideSheet from '@/components/custom/sideSheet';
 
 const About = () => {
     return (
@@ -17,6 +18,7 @@ const About = () => {
                 <ProcessV1 />
                 <NewsLetterV1 />
                 <TestimonialV3 />
+                <SideSheet />
             </ClientLayout>
         </>
     );

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import ProjectV2Data from '@/jsonData/project/ProjectV2Data.json'
+import ProjectV2Data from '../../jsonData/project/ProjectV2Data.json' assert { type: 'json' }
 import SingleProjectV2Item from './SingleProjectV2Item'
 import Pagination from "../others/Pagination";
 import {motion} from "framer-motion";
@@ -12,10 +12,10 @@ type ProjectV2Props = {
 };
 
 const ProjectV2 = ({style, partial = true, page = 1 } : ProjectV2Props ) => {
-    const data = ProjectV2Data.slice(0, 5);
+    const data = ProjectV2Data;
     const itemsPerPage = 5;
     const totalItems = data.length;
-    const totalPages = 2; // Keep 2 pages for future additions
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
 

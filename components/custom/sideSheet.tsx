@@ -6,11 +6,27 @@ export default function FloatingSheetButton() {
 
   const sheetWidth = 370; // width of the sheet
   const buttonWidth = 50; // width of the button
-  const sheetHeight = 520; // increased height to fit form
+  const sheetHeight = 520; // height of the sheet
 
   return (
     <div>
-      {/* Container for sheet + button */}
+      {/* Overlay */}
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            zIndex: 999,
+          }}
+        />
+      )}
+
+      {/* Sheet Container */}
       <div
         style={{
           position: "fixed",
@@ -31,17 +47,19 @@ export default function FloatingSheetButton() {
             background: "#000",
             padding: "0px 10px",
             boxShadow: "-10px 0 40px #00000026",
-            transform: open
-              ? "translateX(0)"
-              : `translateX(${sheetWidth}px)`, // hide sheet offscreen
+            transform: open ? "translateX(0)" : `translateX(${sheetWidth}px)`,
             transition: "transform 0.3s ease",
             display: "flex",
             flexDirection: "column",
             gap: "15px",
           }}
         >
-          <h2 style={{ fontSize: "20px", padding:"0px 15px" }}>Sign Up Now &</h2>
-          <p style={{ fontSize: "20px", padding:"0px 15px" }}>Let’s Get Started</p>
+          <h2 style={{ fontSize: "20px", padding: "0px 15px" }}>
+            Sign Up Now &
+          </h2>
+          <p style={{ fontSize: "20px", padding: "0px 15px" }}>
+            Let’s Get Started
+          </p>
 
           <form
             onSubmit={(e) => {
@@ -49,7 +67,12 @@ export default function FloatingSheetButton() {
               alert("Form submitted!");
               setOpen(false);
             }}
-            style={{ display: "flex", flexDirection: "column", gap: "15px", padding:"0px 15px"}}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "15px",
+              padding: "0px 15px",
+            }}
           >
             <input
               type="text"
@@ -93,7 +116,7 @@ export default function FloatingSheetButton() {
             onClick={() => setOpen(!open)}
             style={{
               position: "absolute",
-              left: `-${buttonWidth}px`, // stick out to the left
+              left: `-${buttonWidth}px`,
               top: 0,
               width: `${buttonWidth}px`,
               height: "200px",
@@ -104,7 +127,7 @@ export default function FloatingSheetButton() {
               cursor: "pointer",
               borderRadius: "0 3px 3px 0",
               boxShadow: "0 0 40px #00000026",
-              marginTop:"150px",
+              marginTop: "150px",
             }}
           >
             <span

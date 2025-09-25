@@ -42,12 +42,14 @@ const FooterV1 = () => {
                                         <div className="footer-contact">
                                             <ul>
                                                 <li>
-                                                    <div className="contact-icon">
-                                                        <i className="fa-solid fa-phone"></i>
-                                                    </div>
-                                                    <div className="contact-text">
-                                                        <Link href="tel:+16824289881">(682) 428-9881</Link>
-                                                    </div>
+                                                    <Link href="tel:+16824289881" className="tel">
+                                                        <div className="contact-icon">
+                                                            <i className="fa-solid fa-phone"></i>
+                                                        </div>
+                                                        <div className="contact-text">
+                                                            (682) 428-9881
+                                                        </div>
+                                                    </Link>
                                                 </li>
                                                 <li>
                                                     <div className="contact-icon">
@@ -62,7 +64,7 @@ const FooterV1 = () => {
                                                         <i className="fa-solid fa-location-dot"></i>
                                                     </div>
                                                     <div className="contact-text">
-                                                        <span>2006 Broken Oak Street<br/>San Antonio - Texas 78232-3106</span>
+                                                        <span>2006 Broken Oak Street<br />San Antonio - Texas 78232-3106</span>
                                                     </div>
                                                 </li>
                                             </ul>

@@ -2,6 +2,7 @@ import React from 'react';
 import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
 import ProjectV2 from '@/components/project/ProjectV2';
 import ClientLayout from "@/components/layouts/ClientLayout";
+import SideSheet from '@/components/custom/sideSheet';
 
 const Projects = async ({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) => {
     const params = await searchParams;
@@ -11,6 +12,7 @@ const Projects = async ({ searchParams }: { searchParams: Promise<{ [key: string
             <ClientLayout>
                 <BreadCrumb pageTitle="Projects" breadcrumb="projects" />
                 <ProjectV2 style="project-page-wrapper" partial={false} page={page} />
+                <SideSheet />
             </ClientLayout>
         </>
     );

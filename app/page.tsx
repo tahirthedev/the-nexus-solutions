@@ -34,12 +34,9 @@ export default function Home() {
         <FaqV1 />
       </ClientLayout>
 
-      {/* Floating Vertical Button */}
-    
-
-      {/* SideSheet */}
-      <RightPhoneSheet/>
+      {/* Floating Vertical Button */} 
       <SideSheet />
+  
     </>
   );
 }

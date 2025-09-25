@@ -1,16 +1,12 @@
-"use client";
 import React from 'react';
 import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
 import ProjectDetailsContent from '@/components/project/ProjectDetailsContent';
-import { useParams } from 'next/navigation';
-import ProjectV1Data from '@/jsonData/project/ProjectV1Data.json'
+import ProjectV2Data from '@/jsonData/project/ProjectV2Data.json'
 import ClientLayout from "@/components/layouts/ClientLayout";
 
-const ProjectDetails = () => {
-
-    const params = useParams();
-    const id = params?.id;
-    const data = ProjectV1Data.find(project => project.id === parseInt(id as string));
+const ProjectDetails = ({ params }: { params: { id: string } }) => {
+    const id = params.id;
+    const data = ProjectV2Data.find(project => project.id === parseInt(id));
     const pageTitle = data?.title || "Project Details";
 
     return (

@@ -85,17 +85,62 @@
     },
     {
         "id": 7,
-        "thumb": "pro-5.png",
+        "thumb": "pro-7.png",
         "thumbLink": "project-details",
-        "title": "NewsHub Custom CMS Platform",
-        "category": "Custom CMS Development",
-        "shortDesc": "Enterprise-grade content management system for digital news platform",
-        "client": "NewsHub Media",
-        "value": "$165,000 USD",
+        "title": "An AI-Powered Mood Journal for Enhanced Emotional Wellness",
+        "category": "Mental Wellness & NLP",
+        "shortDesc": "A Cross-Platform Application for Daily Reflection and Sentiment Analysis",
+        "client": "Self-Initiated Project",
+        "value": "$175,000 USD",
         "duration": "7 Months",
         "technologies": ["Next.js", "Headless CMS", "GraphQL", "MongoDB", "Redis"],
         "features": ["Real-time Publishing", "Multi-user Management", "SEO Tools", "Analytics Dashboard"],
         "description": "Custom CMS handling 1M+ monthly visitors with advanced editorial workflows and automated content distribution"
+    },
+
+    {
+        "id": 8,
+        "thumb": "pro-8.png",
+        "thumbLink": "project-details",
+        "title": "Real-Time API Health and Performance Dashboard",
+        "category": "DevOps & Infrastructure Monitoring",
+        "shortDesc": "is a real-time dashboard displaying key API metrics (latency, uptime, errors), demonstrating technical proficiency in monitoring and data visualization.",
+        "client": "Self-Initiated Project",
+        "value": "$205,000 USD",
+        "duration": "7 Months",
+        "technologies": ["Next.js", "Headless CMS", "GraphQL", "MongoDB", "Redis"],
+        "features": ["Real-time Publishing", "Multi-user Management", "SEO Tools", "Analytics Dashboard"],
+        "description": "Custom CMS handling 1M+ monthly visitors with advanced editorial workflows and automated content distribution"
+    },
+
+    {
+        "id": 9,
+        "thumb": "pro-9.png",
+        "thumbLink": "project-details",
+        "title": "Multi-Brand E-Commerce Platform",
+        "category": "Full-Stack E-Commerce & Multi-Tenancy Architecture",
+        "shortDesc": "Unified platform manages two distinct e-commerce storefronts expertly.",
+        "client": "Self-Initiated Project",
+        "value": "$315,000 USD",
+        "duration": "8 Months",
+        "technologies": ["Next.js", "GraphQL", "PostgreSQL"],
+        "features": ["Real-time Publishing", "Multi-user Management", "SEO Tools", "Analytics Dashboard"],
+        "description": "Eco-Swap is a multi-brand e-commerce platform that runs two distinct stores—one for subscriptions, one for unique single items—from a unified backend. It showcases advanced data modeling and specialized checkout logic."
+    },
+
+    {
+        "id": 10,
+        "thumb": "pro-10.png",
+        "thumbLink": "project-details",
+        "title": "Immersive E-commerce for Curated Home Decor & Lifestyle Goods",
+        "category": "Modern E-commerce & Interactive UX/UI",
+        "shortDesc": "AuraHome Collective is a premium e-commerce platform for curated home decor, emphasizing immersive product discovery and a seamless shopping experience.",
+        "client": "Self-Initiated Project",
+        "value": "$215,000 USD",
+        "duration": "5 Months",
+        "technologies": ["Next.js", "GraphQL", "MongoDB"],
+        "features": ["Real-time Publishing", "Multi-user Management", "SEO Tools", "Analytics Dashboard"],
+        "description": "AuraHome Collective is a meticulously designed e-commerce platform targeting the premium home decor market. Unlike traditional online stores, it focuses on providing an immersive and highly visual shopping experience to better convey the aesthetics and quality of its curated products."
     }
-   
+  
 ]
