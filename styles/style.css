@@ -4279,6 +4279,8 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   width: 180px;
 }
 
+
+
 .te-menu-sidebar-area .te-menu-sidebar-wrapper {
   position: relative;
   padding: 40px;
@@ -9355,7 +9357,7 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
 .te-list-item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+ 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -14064,7 +14066,7 @@ ul.children {
   align-items:center;
   gap:8px;
 }
-
+/* Button Wrapper */
 .btn-wrapper {
   display: inline-flex;
   align-items: center;
@@ -14072,20 +14074,93 @@ ul.children {
   padding: 12px 20px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.4s ease, box-shadow 0.4s ease;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  text-decoration: none; /* remove underline if Link */
 }
 
-.btn-wrapper .arrow-icon {
-  width: 28px;
+/* Arrow Icon inside Button */
+/* Arrow Icon inside Button */
+.btn-wrapper svg {
+  width: 64px;
   height: 28px;
-  color: #02c173; /* default green */
-  transition: transform 0.4s ease, color 0.4s ease, filter 0.4s ease;
+  fill: #02c173; /* default green */
+  transition: transform 0.4s ease, fill 0.4s ease, filter 0.4s ease, width 0.4s ease, height 0.4s ease;
+  margin-left: 8px; /* space between text and arrow if needed */
 }
 
-.btn-wrapper:hover .arrow-icon {
-  transform: translateX(8px) scale(1.1);
-  color: #00a65a; /* hover color */
-  filter: drop-shadow(0 0 6px #02c173) drop-shadow(0 0 12px #02c173);
+/* Hover effects with neon glow and scaling */
+.btn-wrapper:hover svg {
+  transform: translateX(8px) scale(1.3); /* scale up the icon */
+  width: 65px; /* increase width */
+  height: 28px; /* increase height */
+  fill: #00e0a0; /* slightly dimmer neon green */
+  filter: drop-shadow(0 0 4px #00e0a0) drop-shadow(0 0 8px #00e0a0); /* softer glow */
+
 }
+
+/* Optional: subtle background hover for button */
+.btn-wrapper:hover {
+  background-color: rgba(2, 193, 115, 0.1);
+  transition: background-color 0.4s ease;
+}
+
+
+
+.te-list-item-wrapper .te-list-item .icon {
+  width: 105px;
+  height: 105px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.te-list-item-wrapper .te-list-item .icon::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  inset: 0;
+  padding: 1px;
+  border-radius: 9999px;
+
+  /* circular gradient for the border */
+  background: conic-gradient(from 0deg,
+      rgba(2, 193, 115, 0.6),
+      transparent 120deg,
+      rgba(2, 193, 115, 0.6) 240deg,
+      transparent 360deg);
+
+  animation: neon-rotate 3s linear infinite;
+
+  /* keep your masking so only the border shows */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+@keyframes neon-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 

@@ -43,7 +43,7 @@ const SingleLatestServiceV1 = ({ item, index } : { item: itemData; index: number
                         <p className="desc">{text}</p>
                     </div>
                 </div>
-                <Link onClick={() => console.log("clicked")} href="/services" className="btn-wrapper">
+                <Link href={`/service-details/${id}`} className="btn-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="67" height="16"
                          viewBox="0 0 67 16" fill="none">
                         <path

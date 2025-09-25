@@ -36,7 +36,8 @@ const AboutV1 = () => {
                                                 src="/images/icon/list-icon/icon-1.png"
                                                 alt="icon"
                                                 width={40}
-                                                height={40}
+                                                height={40} 
+                                                className='icons'
                                             />
                                         </div>
                                         <span className="text">OUR EXPERTISE</span>

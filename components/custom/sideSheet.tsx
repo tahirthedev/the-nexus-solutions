@@ -31,6 +31,7 @@ export default function FloatingSheetButton() {
       <div
         style={{
           position: "fixed",
+          padding:"10px 0px",
           top: "50%",
           right: 0,
           height: `${sheetHeight}px`,
@@ -123,8 +124,9 @@ export default function FloatingSheetButton() {
               top: "50%",
               transform: "translateY(-50%)",
               width: `${buttonWidth}px`,
-              height: "120px", // smaller button height
+              height: "230px", // smaller button height
               background: "#02c173",
+              lineHeight:"10px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -140,8 +142,10 @@ export default function FloatingSheetButton() {
                 fontFamily: "Poppins, sans-serif",
                 fontWeight: "700",
                 color: "#fff",
-                fontSize: "12px",
+                fontSize: "14px",
+               
                 whiteSpace: "nowrap",
+                letterSpacing: "4px",
               }}
             >
               LET'S GET STARTED
