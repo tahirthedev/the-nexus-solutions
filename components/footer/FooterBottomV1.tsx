@@ -11,10 +11,10 @@ const FooterBottomV1 = () => {
                 <div className="te-footer-bottom-menu">
                     <ul>
                         <li>
-                            <Link href="#">Terms & Condition</Link>
+                            <Link href="/terms-condition">Terms & Condition</Link>
                         </li>
                         <li>
-                            <Link href="#">Privacy Policy</Link>
+                            <Link href="/privacy-policy">Privacy Policy</Link>
                         </li>
                         <li>
                             <Link href="/contact">Contact Us</Link>

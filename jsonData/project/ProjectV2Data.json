@@ -82,5 +82,20 @@
         "technologies": ["Next.js", "Headless CMS", "GraphQL", "MongoDB", "Redis"],
         "features": ["Real-time Publishing", "Multi-user Management", "SEO Tools", "Analytics Dashboard"],
         "description": "Custom CMS handling 1M+ monthly visitors with advanced editorial workflows and automated content distribution"
+    },
+    {
+        "id": 7,
+        "thumb": "pro-5.png",
+        "thumbLink": "project-details",
+        "title": "NewsHub Custom CMS Platform",
+        "category": "Custom CMS Development",
+        "shortDesc": "Enterprise-grade content management system for digital news platform",
+        "client": "NewsHub Media",
+        "value": "$165,000 USD",
+        "duration": "7 Months",
+        "technologies": ["Next.js", "Headless CMS", "GraphQL", "MongoDB", "Redis"],
+        "features": ["Real-time Publishing", "Multi-user Management", "SEO Tools", "Analytics Dashboard"],
+        "description": "Custom CMS handling 1M+ monthly visitors with advanced editorial workflows and automated content distribution"
     }
+   
 ]

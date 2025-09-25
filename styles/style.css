@@ -1,3 +1,4 @@
+
 /**
  * Stylesheet:  style.css
  * Theme:       NetFusion - AI Powered Startup & Technology Next JS Template
@@ -40,6 +41,9 @@ Footer
 
 ===========================*/
 /* Theme Default CSS */
+
+
+
 * {
   margin: 0;
   border: 0;
@@ -4711,8 +4715,6 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   fill: #02c173;
 }
 
-
-
 .about-us-card .te-section-title {
   margin-bottom: 15px;
 }
@@ -4895,7 +4897,6 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
     transform: rotate(360deg);
   }
 }
-
 
 .latest-service-card .title-wrapper {
   width: 280px;
@@ -13832,7 +13833,6 @@ ul.children {
   }
 }
 
-
 /* From Uiverse.io by adamgiebl */
 .te-theme-btn {
   --green: #1BFD9C;
@@ -13883,7 +13883,6 @@ ul.children {
   -webkit-transform: rotateY(360deg);
 }
 
-
 .te-process-step .te-title-wrapper .icon-wrapper:before {
   content: "";
   position: absolute;
@@ -13915,18 +13914,179 @@ ul.children {
   }
 }
 
-
 .btx{
   display: flex;
   justify-content: center;
   margin-top:20px;
- 
+
+}
+
+.right-phone-sheet {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+
+/* Container wrapping both sheet and icon */
+.phone-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; /* icon on right, sheet on left */
+}
+
+/* Phone icon box */
+.phone-box {
+  height: 64px;
+  width: 64px;
+  background-color: #2563eb;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+/* Phone icon */
+.phone-box i {
+  color: white;
+  font-size: 24px;
+}
+
+/* Sheet */
+.sheet {
+  height: 64px;
+  width: 180px;
+  background-color: white;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%); /* hide behind icon */
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+/* Sheet content */
+.sheet-content {
+  text-align: center;
+}
+
+.sheet-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sheet-number {
+  color: #2563eb;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* Hover effect: when hovering the icon, both slide out */
+.phone-container:hover .sheet {
+  transform: translateX(0); /* slide out fully */
+}
+
+.phone-container:hover .phone-box {
+  transform: translateX(-250px); /* move icon with sheet */
 }
 
 
 
+.privacy-container {
+  max-width: 900px;
+  margin: 150px auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.privacy-container h2 {
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.privacy-container h3 {
+  font-size: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.privacy-container p {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.privacy-container ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color:white;
+}
+
+.privacy-container li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-note {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #555;
+}
 
 
 
+.terms-container {
+  max-width: 900px;
+  margin: 150px auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: white;
+}
+
+.terms-container h2 {
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.terms-container h3 {
+  font-size: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.terms-container p {
+  margin-bottom: 1rem;
+}
+
+.terms-container ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms-container li {
+  margin-bottom: 0.5rem;
+}
+
+.terms-footer {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #555;
+}
 
 

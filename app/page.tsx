@@ -13,6 +13,7 @@ import ProcessV2 from "@/components/process/ProcessV2";
 import PricingPlans from "@/components/pricingPlans/PricingPlans";
 import ProjectV1 from "@/components/project/ProjectV1";
 import SideSheet from "@/components/custom/sideSheet";
+import RightPhoneSheet from "@/components/custom/rightPhoneSheet";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -37,6 +38,7 @@ export default function Home() {
     
 
       {/* SideSheet */}
+      <RightPhoneSheet/>
       <SideSheet />
     </>
   );

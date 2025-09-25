@@ -12,9 +12,10 @@ type ProjectV2Props = {
 };
 
 const ProjectV2 = ({style, partial = true, page = 1 } : ProjectV2Props ) => {
-    const itemsPerPage = 3;
-    const totalItems = ProjectV2Data.length;
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const data = ProjectV2Data.slice(0, 5);
+    const itemsPerPage = 5;
+    const totalItems = data.length;
+    const totalPages = 2; // Keep 2 pages for future additions
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
 
@@ -57,13 +58,13 @@ const ProjectV2 = ({style, partial = true, page = 1 } : ProjectV2Props ) => {
                                 <div className="portfolio-column-in-three">
                                     {partial ?
                                         <>
-                                            {ProjectV2Data.slice(0, 3).map((item, index) =>
+                                            {ProjectV2Data.slice(0, 5).map((item, index) =>
                                                 <SingleProjectV2Item key={item.id} item={item} index={index} />
                                             )}
                                         </>
                                         :
                                         <>
-                                            {ProjectV2Data.slice(startIndex, endIndex).map((item, index) =>
+                                            {data.slice(startIndex, endIndex).map((item, index) =>
                                                 <SingleProjectV2Item key={item.id} item={item} index={index + startIndex} />
                                             )}
                                         </>
