@@ -4681,39 +4681,6 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   width: 100%;
 }
 
-.btn-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 20px;
-  border-radius: 6px;
-  background: transparent;
-  position: relative;
-  overflow: hidden;
-  transition: background 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* Arrow default state */
-.btn-wrapper svg {
-  transition: transform 0.4s ease;
-}
-
-.btn-wrapper svg {
-  transition: all 0.4s ease;
-}
-
-.btn-wrapper svg path {
-  transition: fill 0.4s ease;
-}
-
-.btn-wrapper:hover svg {
-  transform: translateX(8px) scale(1.1);
-  filter: drop-shadow(0 0 6px #02c173) drop-shadow(0 0 12px #02c173);
-}
-
-.btn-wrapper:hover svg path {
-  fill: #02c173;
-}
 
 .about-us-card .te-section-title {
   margin-bottom: 15px;
@@ -14097,3 +14064,28 @@ ul.children {
   align-items:center;
   gap:8px;
 }
+
+.btn-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.btn-wrapper .arrow-icon {
+  width: 28px;
+  height: 28px;
+  color: #02c173; /* default green */
+  transition: transform 0.4s ease, color 0.4s ease, filter 0.4s ease;
+}
+
+.btn-wrapper:hover .arrow-icon {
+  transform: translateX(8px) scale(1.1);
+  color: #00a65a; /* hover color */
+  filter: drop-shadow(0 0 6px #02c173) drop-shadow(0 0 12px #02c173);
+}
+
+

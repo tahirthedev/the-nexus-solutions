@@ -6,6 +6,7 @@ export default function FloatingSheetButton() {
 
   const sheetWidth = 370; // width of the sheet
   const buttonWidth = 50; // width of the button
+  const buttonHeight = 50; // width of the button
   const sheetHeight = 520; // height of the sheet
 
   return (
@@ -33,15 +34,17 @@ export default function FloatingSheetButton() {
           top: "50%",
           right: 0,
           height: `${sheetHeight}px`,
+          width: open ? `${sheetWidth}px` : `${buttonWidth}px`, // 👈 only button width when closed
           transform: `translateY(-50%)`,
-          display: "flex",
           zIndex: 1000,
         }}
       >
         {/* Sheet */}
         <div
           style={{
-            position: "relative",
+            position: "absolute",
+            top: 0,
+            right: 0,
             width: `${sheetWidth}px`,
             height: `${sheetHeight}px`,
             background: "#000",
@@ -117,17 +120,17 @@ export default function FloatingSheetButton() {
             style={{
               position: "absolute",
               left: `-${buttonWidth}px`,
-              top: 0,
+              top: "50%",
+              transform: "translateY(-50%)",
               width: `${buttonWidth}px`,
-              height: "200px",
+              height: "120px", // smaller button height
               background: "#02c173",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               cursor: "pointer",
-              borderRadius: "0 3px 3px 0",
-              boxShadow: "0 0 40px #00000026",
-              marginTop: "150px",
+              borderRadius: "5px 0 0 5px",
+              boxShadow: "0 0 20px #00000026",
             }}
           >
             <span
@@ -137,7 +140,7 @@ export default function FloatingSheetButton() {
                 fontFamily: "Poppins, sans-serif",
                 fontWeight: "700",
                 color: "#fff",
-                fontSize: "16px",
+                fontSize: "12px",
                 whiteSpace: "nowrap",
               }}
             >
