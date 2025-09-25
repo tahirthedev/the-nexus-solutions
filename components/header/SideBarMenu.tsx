@@ -25,7 +25,7 @@ const SideBarMenu = ({ isMenuActive, closeMenu, toggleSubMenu }: SideBarMenuProp
                             <Link href="/">
 
                                 <Image
-                                    src="/images/logo/logo.png"
+                                    src="/images/logo/nexus logo site.png"
                                     alt="Image"
                                     width={187}
                                     height={56}
