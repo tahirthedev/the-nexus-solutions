@@ -16,7 +16,7 @@ export default function FloatingSheetButton() {
         <div
           onClick={() => setOpen(false)}
           style={{
-            position: "fixed",
+            position: "fixed", 
             top: 0,
             left: 0,
             width: "100vw",
