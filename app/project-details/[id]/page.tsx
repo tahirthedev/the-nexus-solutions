@@ -4,8 +4,8 @@ import ProjectDetailsContent from '@/components/project/ProjectDetailsContent';
 import ProjectV2Data from '@/jsonData/project/ProjectV2Data.json'
 import ClientLayout from "@/components/layouts/ClientLayout";
 
-const ProjectDetails = ({ params }: { params: { id: string } }) => {
-    const id = params.id;
+const ProjectDetails = async ({ params }: { params: Promise<{ id: string }> }) => {
+    const { id } = await params;
     const data = ProjectV2Data.find(project => project.id === parseInt(id));
     const pageTitle = data?.title || "Project Details";
 
