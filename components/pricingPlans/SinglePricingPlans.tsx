@@ -25,6 +25,8 @@ type PricingCardData = {
 const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: number }) => {
   const { sub_title, title, price, list } = item;
   const delay = index * 0.2;
+  // Generate slug from title
+  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
   return (
     <>
@@ -74,8 +76,8 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
 
           {/* Secondary Action — Stays at Bottom Right */}
           <div className="btn-wrapper btx">
-            <Link href="/services" className="te-theme-btn blue-btn">
-              View Details 
+            <Link href={`/service-plan/${slug}`} className="te-theme-btn blue-btn">
+              View Details
             </Link>
           </div>
         </div>

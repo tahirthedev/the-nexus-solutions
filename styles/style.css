@@ -1,4 +1,3 @@
-
 /**
  * Stylesheet:  style.css
  * Theme:       NetFusion - AI Powered Startup & Technology Next JS Template
@@ -53,7 +52,7 @@ Footer
 html,
 body {
 
-    user-select: text;
+  user-select: text;
 
   height: 100%;
   font-size: 16px;
@@ -6844,6 +6843,11 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   backdrop-filter: blur(6.5px);
 }
 
+.price-card.style-1:hover {
+  box-shadow: 0 0 15px rgba(2, 193, 115, .45);
+  transition: all .5s ease-out;
+}
+
 .price-card.style-2 {
   background-color: #121212;
   background-image: none;
@@ -12903,7 +12907,8 @@ ul.children {
 
 /* Neon border on focus */
 .te-subscribe-form-widget .single-field input:focus {
-  border-color: #02c173; /* neon green */
+  border-color: #02c173;
+  /* neon green */
 }
 
 .te-subscribe-form-widget .single-field *::-webkit-input-placeholder {
@@ -13860,21 +13865,22 @@ ul.children {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 50%; /* make it a circle */
-  padding: 2px; /* thickness of border */
+  border-radius: 50%;
+  /* make it a circle */
+  padding: 2px;
+  /* thickness of border */
 
-  background: conic-gradient(
-    from 0deg,
-    rgba(2, 193, 115, 0.6),
-    transparent 60%,
-    rgba(2, 193, 115, 0.6)
-  );
+  background: conic-gradient(from 0deg,
+      rgba(2, 193, 115, 0.6),
+      transparent 60%,
+      rgba(2, 193, 115, 0.6));
 
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 
-  animation: spin-border 3s linear infinite; /* rotation animation */
+  animation: spin-border 3s linear infinite;
+  /* rotation animation */
 }
 
 /* Animation for circular moving effect */
@@ -13882,15 +13888,16 @@ ul.children {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
-.btx{
+.btx {
   display: flex;
   justify-content: center;
-  margin-top:20px;
+  margin-top: 20px;
 
 }
 
@@ -13907,7 +13914,8 @@ ul.children {
   position: relative;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse; /* icon on right, sheet on left */
+  flex-direction: row-reverse;
+  /* icon on right, sheet on left */
 }
 
 /* Phone icon box */
@@ -13921,7 +13929,7 @@ ul.children {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   z-index: 2;
 }
@@ -13938,11 +13946,12 @@ ul.children {
   width: 180px;
   background-color: white;
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(100%); /* hide behind icon */
+  transform: translateX(100%);
+  /* hide behind icon */
   transition: transform 0.3s ease;
   z-index: 1;
 }
@@ -13955,7 +13964,7 @@ ul.children {
 .sheet-title {
   font-size: 18px;
   font-weight: 600;
-  color:black;
+  color: black;
 
 }
 
@@ -13967,11 +13976,13 @@ ul.children {
 
 /* Hover effect: when hovering the icon, both slide out */
 .phone-container:hover .sheet {
-  transform: translateX(0); /* slide out fully */
+  transform: translateX(0);
+  /* slide out fully */
 }
 
 .phone-container:hover .phone-box {
-  transform: translateX(-250px); /* move icon with sheet */
+  transform: translateX(-250px);
+  /* move icon with sheet */
 }
 
 
@@ -14007,7 +14018,7 @@ ul.children {
 .privacy-container ul {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
-  color:white;
+  color: white;
 }
 
 .privacy-container li {
@@ -14064,11 +14075,12 @@ ul.children {
   color: #555;
 }
 
-.tel{
-  display: flex; 
-  align-items:center;
-  gap:8px;
+.tel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
 /* Button Wrapper */
 .btn-wrapper {
   display: inline-flex;
@@ -14078,7 +14090,8 @@ ul.children {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
-  text-decoration: none; /* remove underline if Link */
+  text-decoration: none;
+  /* remove underline if Link */
 }
 
 /* Arrow Icon inside Button */
@@ -14086,18 +14099,25 @@ ul.children {
 .btn-wrapper svg {
   width: 64px;
   height: 28px;
-  fill: #02c173; /* default green */
+  fill: #02c173;
+  /* default green */
   transition: transform 0.4s ease, fill 0.4s ease, filter 0.4s ease, width 0.4s ease, height 0.4s ease;
-  margin-left: 8px; /* space between text and arrow if needed */
+  margin-left: 8px;
+  /* space between text and arrow if needed */
 }
 
 /* Hover effects with neon glow and scaling */
 .btn-wrapper:hover svg {
-  transform: translateX(8px) scale(1.3); /* scale up the icon */
-  width: 65px; /* increase width */
-  height: 28px; /* increase height */
-  fill: #00e0a0; /* slightly dimmer neon green */
-  filter: drop-shadow(0 0 4px #00e0a0) drop-shadow(0 0 8px #00e0a0); /* softer glow */
+  transform: translateX(8px) scale(1.3);
+  /* scale up the icon */
+  width: 65px;
+  /* increase width */
+  height: 28px;
+  /* increase height */
+  fill: #00e0a0;
+  /* slightly dimmer neon green */
+  filter: drop-shadow(0 0 4px #00e0a0) drop-shadow(0 0 8px #00e0a0);
+  /* softer glow */
 
 }
 
@@ -14171,6 +14191,3 @@ ul.children {
     padding-right: 25px;
   }
 }
-
-
-
