@@ -37,6 +37,7 @@ import ServiceDetailsContent from '@/components/services/ServiceDetailsContent';
 import FeatureV1Data from '@/jsonData/latestService/LatestServiceV1Data.json';
 import ClientLayout from "@/components/layouts/ClientLayout";
 import SideSheet from '@/components/custom/sideSheet';
+import PricingPlans from '@/components/pricingPlans/PricingPlans';
 
 const ServiceDetails = () => {
   const params = useParams();
@@ -53,6 +54,7 @@ const ServiceDetails = () => {
       ) : (
         <p style={{ padding: "2rem", textAlign: "center" }}>Service not found.</p>
       )}
+       
       <SideSheet />
     </ClientLayout>
   );

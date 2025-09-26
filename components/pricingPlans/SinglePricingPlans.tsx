@@ -75,7 +75,7 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
           </div>
 
           {/* Secondary Action — Stays at Bottom Right */}
-          <div className="btn-wrapper btx">
+          <div className="btn-wrapper ">
             <Link href={`/service-plan/${slug}`} className="te-theme-btn blue-btn">
               View Details
             </Link>

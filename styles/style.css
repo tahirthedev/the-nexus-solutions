@@ -6844,7 +6844,6 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
 }
 
 .price-card.style-1:hover {
-  box-shadow: 0 0 15px rgba(2, 193, 115, .45);
   transition: all .5s ease-out;
 }
 

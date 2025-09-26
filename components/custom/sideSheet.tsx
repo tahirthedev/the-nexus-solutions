@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function FloatingSheetButton() {
   const [open, setOpen] = useState(false);
+  const [phoneSheetOpen, setPhoneSheetOpen] = useState(false)
 
   const sheetWidth = 370; // width of the sheet
   const buttonWidth = 50; // width of the button
@@ -29,6 +30,7 @@ export default function FloatingSheetButton() {
       )}
 
       {/* Sheet Container */}
+      <div className="">
       <div
         style={{
           position: "fixed",
@@ -116,6 +118,8 @@ export default function FloatingSheetButton() {
             </button>
           </form>
 
+
+
           {/* Button attached to left edge of sheet */}
           <div
             onClick={() => setOpen(!open)}
@@ -153,30 +157,35 @@ export default function FloatingSheetButton() {
             </span>
           </div>
 
-          <div
-            onClick={() => alert("Phone Clicked!")}
-            style={{
-              position: "absolute",
-              left: `-${buttonWidth}px`,
-              top: "calc(50% + 120px)", // place below the first button (230px/2 = 115 + small gap)
-              transform: "translateY(0)",
-              width: `${buttonWidth}px`,
-              height: `${buttonHeight}px`,
-              background: "#02b869",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer",
-              borderRadius: "5px 0 0 5px",
-              boxShadow: "0 0 20px #00000026",
-            }}
-          >
-            {/* Phone Icon (can replace with any icon library) */}
-            <span style={{ color: "#fff", fontSize: "20px" }}>
-              <Phone className="text-white"/>
-            </span>
-          </div>
+
         </div>
+
+
+      </div>
+      <div
+        onMouseEnter={() => setPhoneSheetOpen(true)}
+        onMouseLeave={() => setPhoneSheetOpen(false)}
+        style={{
+          position: "absolute",
+          left: `-${buttonWidth}px`,
+          top: "calc(50% + 120px)", // place below the first button (230px/2 = 115 + small gap)
+          transform: "translateY(0)",
+          width: `${buttonWidth}px`,
+          height: `${buttonHeight}px`,
+          background: "#02b869",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+          borderRadius: "5px 0 0 5px",
+          boxShadow: "0 0 20px #00000026",
+        }}
+      >
+        {/* Phone Icon (can replace with any icon library) */}
+        <span style={{ color: "#fff", fontSize: "20px" }}>
+          <Phone className="text-white" />
+        </span>
+      </div>
       </div>
     </div>
   );

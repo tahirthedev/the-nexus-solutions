@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import ServicePricing from './ServicePricing';
+import PricingPlans from '../pricingPlans/PricingPlans';
 
 interface ServiceData {
     id: number;
@@ -432,7 +433,10 @@ const ServiceDetailsContent = ({ serviceSlug, serviceData }: ServiceDetailsConte
             </div>
             
             {/* Service-specific Pricing Section */}
-            <ServicePricing serviceId={serviceData.id} />
+            {/* <ServicePricing serviceId={serviceData.id} /> */}
+            <div className='' style={{background:"#121212"}}>
+            <PricingPlans/>
+            </div>
         </>
     );
 };
