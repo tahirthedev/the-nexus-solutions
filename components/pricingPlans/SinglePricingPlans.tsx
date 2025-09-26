@@ -43,9 +43,9 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
           {/* Price Section */}
           <div className="price">
             <h3 className="price-heading">
-              <span className="currency">{price.currency}</span> 
-              <span className="currency">{price.price}</span>
-              <span className="under-dot currency">{price.under_dot}</span>
+              <span className="">{price.currency}</span> 
+              <span className="">{price.price}</span>
+              <span className="under-dot ">{price.under_dot}</span>
             </h3>
             <p className="price-desc">{price.price_desc}</p>
           </div>

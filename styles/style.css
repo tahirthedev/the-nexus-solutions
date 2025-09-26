@@ -14211,6 +14211,6 @@ ul.children {
   }
 }
 
-.currency:hover{
+.price-heading span:hover{
   color: #01a359;
 }
