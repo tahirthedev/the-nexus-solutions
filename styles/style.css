@@ -11121,7 +11121,7 @@ ul.children {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .about-feature-area {
     padding: 80px 0;
-    margin: 0 15px;
+    margin: 0 25px;
   }
 }
 
@@ -11163,7 +11163,7 @@ ul.children {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .faq-area.style-1 {
-    margin: 0 15px;
+    margin: 0 25px 30px;
     padding: 80px 0;
   }
 }
@@ -11334,7 +11334,7 @@ ul.children {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .subscribe-area {
-    margin: 0 15px;
+    margin: 0 25px;
   }
 }
 
@@ -14167,8 +14167,8 @@ ul.children {
 
 @media (max-width: 768px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
