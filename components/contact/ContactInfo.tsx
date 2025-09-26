@@ -31,7 +31,7 @@ const ContactInfo = () => {
                                 <h3 className="title">Phone number</h3>
                             </div>
                             <div className="content-wrapper">
-                                <p>(804) 293-9240 <br/> 24 hour support </p>
+                                <p>(682) 428-9881 <br/> 24 hour support </p>
                             </div>
                         </div>
                         <div className="contact-info-inner">

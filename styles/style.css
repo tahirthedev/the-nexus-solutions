@@ -8593,8 +8593,8 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
 }
 
 .page-breadcrumb-area {
-  padding-top: 200px;
-  padding-bottom: 170px;
+  padding-top: 150px;
+  padding-bottom: 70px;
   position: relative;
   z-index: 2;
   background-size: cover;

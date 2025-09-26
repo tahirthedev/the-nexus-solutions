@@ -3,6 +3,11 @@
 import ClientLayout from '@/components/layouts/ClientLayout';
 import styles from './service-package.module.css';
 import { Metadata } from "next";
+import TestimonialV1 from '@/components/testimonial/TestimonialV1';
+import NewsLetterV1 from '@/components/newLetter/NewsLetterV1';
+import PricingPlans from '@/components/pricingPlans/PricingPlans';
+import { Award, CheckCircle } from 'lucide-react';
+import BreadCrumb from '@/components/breadcrumb/BreadCrumb';
 
 // --- generateMetadata ---
 export async function generateMetadata(
@@ -70,17 +75,17 @@ export default async function ServicePlanDetail(
   ];
 
   const features = [
-    { icon: "✓", title: "Quality Checked", description: "Professional quality assurance" },
-    { icon: "⚡", title: "Quick Turnaround Time", description: "Fast delivery guaranteed" },
-    { icon: "💰", title: "Value For Money", description: "Best pricing in market" },
-    { icon: "🏆", title: "Award Winning Team", description: "Experienced professionals" }
+    { icon: <CheckCircle color="#10b981" />, title: "Quality Checked", description: "Professional quality assurance" },
+    { icon: <i className="fa-solid fa-forward-fast" style={{ color: '#10b981' }}></i>, title: "Quick Turnaround Time", description: "Fast delivery guaranteed" },
+    { icon: <i className="fa-solid fa-money-check" style={{ color: '#10b981' }}></i>, title: "Value For Money", description: "Best pricing in market" },
+    { icon: <Award color="#10b981" />, title: "Award Winning Team", description: "Experienced professionals" }
   ];
 
   const processSteps = [
-    { number: 1, title: "Project Brief", description: "Initial consultation and requirements gathering" },
-    { number: 2, title: "First Concept", description: "Initial design concepts and wireframes" },
-    { number: 3, title: "Feedback/Revisions", description: "Client feedback and design refinements" },
-    { number: 4, title: "Final Delivery", description: "Project completion and handover" }
+    { number: 1, title: "Project Brief", description: "Initial consultation and requirements gathering", icon: <i className="fa-solid fa-lightbulb" style={{ color: '#10b981' }}></i> },
+    { number: 2, title: "First Concept", description: "Initial design concepts and wireframes", icon: <i className="fa-solid fa-pencil" style={{ color: '#10b981' }}></i> },
+    { number: 3, title: "Feedback/Revisions", description: "Client feedback and design refinements", icon: <i className="fa-solid fa-comments" style={{ color: '#10b981' }}></i> },
+    { number: 4, title: "Final Delivery", description: "Project completion and handover", icon: <i className="fa-solid fa-check" style={{ color: '#10b981' }}></i> }
   ];
 
   const pkg = servicePackages.find((p) => p.slug === slug);
@@ -107,6 +112,8 @@ export default async function ServicePlanDetail(
           <h1 className={styles.heroTitle} style={{ marginTop: "3rem" }}>{pkg.name}</h1>
         </section>
 
+        {/* <BreadCrumb pageTitle="About Us" breadcrumb="about" /> */}
+
         {/* Agency Section */}
         <section className={styles.agency}>
           <div className={styles.agencyContainer}>
@@ -114,10 +121,10 @@ export default async function ServicePlanDetail(
               <h2>A Creative Digital Agency You Can Count On!</h2>
               <p>A creative digital agency can offer a wide range of services for brand and development solutions for existing and emerging brands. Whether you're in start-up or we start a established business.</p>
               <div className='btn-wrapper'>
-                <button className="te-theme-btn">Let's Get Started</button>
+                <button className="te-theme-btn blue-btn">Let's Get Started</button>
               </div>
               <div className='btn-wrapper'>
-                <button className="te-theme-btn">Let's Discuss</button>
+                <button className="te-theme-btn blue-btn">Let's Discuss</button>
               </div>
             </div>
             <div className={styles.agencyFeatures}>
@@ -133,7 +140,7 @@ export default async function ServicePlanDetail(
         </section>
 
         {/* CTA Section */}
-        <section className={styles.ctaSection}>
+        {/* <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2>Ready to Begin?<br />Select This Package</h2>
             <p>Don't miss out - secure this package and begin your digital transformation.</p>
@@ -141,7 +148,10 @@ export default async function ServicePlanDetail(
               <button className="te-theme-btn blue-btn"> Select Package</button>
             </div>
           </div>
-        </section>
+        </section> */}
+        <div style={{ background: "#121212" }}>
+          <PricingPlans />
+        </div>
 
         {/* Process Section */}
         <section className={styles.process}>
@@ -151,7 +161,7 @@ export default async function ServicePlanDetail(
           <div className={styles.processSteps}>
             {processSteps.map((step) => (
               <div key={step.number} className={styles.processStep}>
-                <div className={styles.stepNumber}>{step.number}</div>
+                <div className={styles.featureIcon}>{step.icon}</div>
                 <h4>{step.title}</h4>
                 <p>{step.description}</p>
               </div>
@@ -165,7 +175,7 @@ export default async function ServicePlanDetail(
         </section>
 
         {/* CTA Section 2 */}
-        <section className={styles.ctaSection}>
+        {/* <section className={styles.ctaSection}>
           <div className={styles.ctaContent}>
             <h2>Make Your First Move<br />Share Your Idea With Us</h2>
             <p>Contact our experts NOW to begin crafting your project.</p>
@@ -174,26 +184,17 @@ export default async function ServicePlanDetail(
             </div>
             <p className={styles.contactInfo}>📞 Contact Number: +1 (555) 564-8360 | 💬 Start Live Chat</p>
           </div>
-        </section>
+        </section> */}
+
 
         {/* Testimonials Section */}
-        <section className={styles.testimonials}>
-          <div className={styles.testimonialsContainer}>
-            <h2>Client's Love Towards Nexus Digitals</h2>
-            <p>See what our clients have to say about our service and experience with Nexus Digitals. Their words of appreciation really make a difference to us. Let's take a look.</p>
+        <div className='' style={{ padding: "30px 0px" }}>
+          <TestimonialV1 testimonialClass="default-testimonial" />
+        </div>
 
-            <div className={styles.testimonialCard}>
-              <p className={styles.testimonialText}>"We are grateful for Nexus Digitals competence and help through the clout. I highly recommend Nexus Digitals for all design solutions & digital marketing needs."</p>
-              <div className={styles.testimonialAuthor}>
-                <div className={styles.authorAvatar}>JS</div>
-                <div className={styles.authorInfo}>
-                  <h5>Johnathan Smith</h5>
-                  <p>CEO, Tech Solutions</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div style={{ padding: "40px 0px" }}>
+          <NewsLetterV1 />
+        </div>
       </div>
     </ClientLayout>
   );
