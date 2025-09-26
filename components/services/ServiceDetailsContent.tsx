@@ -25,7 +25,7 @@ const ServiceDetailsContent = ({ serviceSlug, serviceData }: ServiceDetailsConte
             1: { // Website Development
                 mainTitle: "Website Development",
                 subtitle: "Custom Web Solutions",
-                description: "At Nexus Solutions, we create stunning, responsive websites that drive business growth. Our expert development team combines cutting-edge technology with creative design to deliver websites that not only look great but perform exceptionally.",
+                description: "At Nexus Digitals, we create stunning, responsive websites that drive business growth. Our expert development team combines cutting-edge technology with creative design to deliver websites that not only look great but perform exceptionally.",
                 features: [
                     "Responsive Design & Mobile Optimization",
                     "Content Management System Integration", 

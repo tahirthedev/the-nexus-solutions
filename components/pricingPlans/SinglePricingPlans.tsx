@@ -43,8 +43,9 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
           {/* Price Section */}
           <div className="price">
             <h3 className="price-heading">
-              <span className="currency">{price.currency}</span> {price.price}
-              <span className="under-dot">{price.under_dot}</span>
+              <span className="currency">{price.currency}</span> 
+              <span className="currency">{price.price}</span>
+              <span className="under-dot currency">{price.under_dot}</span>
             </h3>
             <p className="price-desc">{price.price_desc}</p>
           </div>
@@ -67,7 +68,7 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
                 {list.map((item, idx) => (
                   <li className="price-list-item" key={idx}>
                     <i className={item.icon}></i>
-                    <span className="text" style={{userSelect:"auto"}}>{item.text}</span>
+                    <span className="text" style={{ userSelect: "auto" }}>{item.text}</span>
                   </li>
                 ))}
               </ul>
@@ -75,7 +76,7 @@ const SinglePricingPlans = ({ item, index }: { item: PricingCardData; index: num
           </div>
 
           {/* Secondary Action — Stays at Bottom Right */}
-          <div className="btn-wrapper ">
+          <div className="" style={{ paddingTop: "30px", margin: "auto" }}>
             <Link href={`/service-plan/${slug}`} className="te-theme-btn blue-btn">
               View Details
             </Link>

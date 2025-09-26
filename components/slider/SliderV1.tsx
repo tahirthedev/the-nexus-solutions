@@ -66,10 +66,10 @@ const SliderV1 = () => {
                                 <div className="content-wrapper">
                                     <p>At Nexus Digitals, we combine creativity with cutting-edge technology to deliver exceptional digital experiences. From custom websites to comprehensive digital marketing strategies, we help businesses thrive in the digital landscape.</p>
                                 </div>
-                                <div className="btn-wrapper">
+                               
                                     <Link href="/about" className="te-theme-btn blue-btn">Learn More <i
                                         className="fa fa-solid fa-arrow-right"></i></Link>
-                                </div>
+                               
                             </div>
                         </div>
                         <div className="blur-shape"></div>

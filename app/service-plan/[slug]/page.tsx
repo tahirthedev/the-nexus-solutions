@@ -120,12 +120,10 @@ export default async function ServicePlanDetail(
             <div className={styles.agencyContent}>
               <h2>A Creative Digital Agency You Can Count On!</h2>
               <p>A creative digital agency can offer a wide range of services for brand and development solutions for existing and emerging brands. Whether you're in start-up or we start a established business.</p>
-              <div className='btn-wrapper'>
+              <div className='' style={{display:"flex", gap:"15px"}}>
                 <button className="te-theme-btn blue-btn">Let's Get Started</button>
-              </div>
-              <div className='btn-wrapper'>
                 <button className="te-theme-btn blue-btn">Let's Discuss</button>
-              </div>
+                </div>
             </div>
             <div className={styles.agencyFeatures}>
               {features.map((feature, index) => (

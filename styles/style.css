@@ -378,6 +378,8 @@ input.te-theme-btn.simple-btn {
   float: right;
 }
 
+
+
 input.te-theme-btn {
   display: inline-block !important;
   width: inherit !important;
@@ -6833,18 +6835,37 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
 }
 
 .price-card.style-1 {
+  position: relative;
+  z-index: 0;
   border-radius: 20px;
   border: 1px solid #e7edf433;
-  background-image: linear-gradient(110deg, rgba(40, 40, 40, 0.29) -0.9%, rgba(77, 77, 77, 0.21) 101.13%);
+  background-image: linear-gradient(
+    110deg,
+    rgba(40, 40, 40, 0.29) -0.9%,
+    rgba(77, 77, 77, 0.21) 101.13%
+  );
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(6.5px);
   backdrop-filter: blur(6.5px);
+
+  /* ✅ smooth animation */
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
 
 .price-card.style-1:hover {
-  transition: all .5s ease-out;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 20px 5px rgba(2, 193, 115, 0.6),
+    inset 0 0 10px rgba(2, 193, 115, 0.3);
+  box-shadow: 0 0 20px 5px rgba(2, 193, 115, 0.6),
+    inset 0 0 10px rgba(2, 193, 115, 0.3);
+
+  /* ✅ smooth scale instead of shifting up */
+  transform: scale(0.95);
 }
+
+
+
 
 .price-card.style-2 {
   background-color: #121212;
@@ -14087,7 +14108,7 @@ ul.children {
   padding: 12px 20px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  transition: background-color 0.4s ease;
   text-decoration: none;
   /* remove underline if Link */
 }
@@ -14188,4 +14209,8 @@ ul.children {
     padding-left: 25px;
     padding-right: 25px;
   }
+}
+
+.currency:hover{
+  color: #01a359;
 }
