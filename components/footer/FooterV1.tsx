@@ -26,7 +26,7 @@ const FooterV1 = () => {
                                                 />
                                             </Link>
                                         </div>
-                                        <p>Nexus Solutions delivers innovative digital services to transform your business and enhance your online presence.</p>
+                                        <p>Nexus Digitals delivers innovative digital services to transform your business and enhance your online presence.</p>
                                     </div>
                                 </div>
                             </div>

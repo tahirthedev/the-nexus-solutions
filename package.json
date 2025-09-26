@@ -13,7 +13,6 @@
   "dependencies": {
     "bootstrap": "^5.3.5",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^2.5.4",
     "framer-motion": "^12.8.0",
     "lucide-react": "^0.544.0",
     "next": "15.3.1",
@@ -24,12 +23,13 @@
     "react-simple-scroll-up": "^0.2.3",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^12.0.1"
+    "swiper": "^12.0.1",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "20.19.17",
+    "@types/react": "18.3.24",
     "@types/react-dom": "^18",
     "@types/react-modal-video": "^1.2.3",
     "@types/react-slick": "^0.23.13",
@@ -37,6 +37,6 @@
     "@typescript-eslint/parser": "^8.31.0",
     "eslint": "^9.25.1",
     "eslint-config-next": "15.3.1",
-    "typescript": "^5"
+    "typescript": "5.9.2"
   }
 }

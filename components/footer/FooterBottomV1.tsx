@@ -6,7 +6,7 @@ const FooterBottomV1 = () => {
         <>
             <div className="te-footer-bottom-wrapper">
                 <div className="te-copyright-text">
-                    <p>&copy; <Link href="#">Nexus Solutions</Link> {(new Date().getFullYear())} | All Rights Reserved</p>
+                    <p>&copy; <Link href="#">Nexus Digitals</Link> {(new Date().getFullYear())} | All Rights Reserved</p>
                 </div>
                 <div className="te-footer-bottom-menu">
                     <ul>
