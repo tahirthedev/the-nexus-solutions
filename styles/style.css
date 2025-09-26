@@ -5047,7 +5047,7 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   flex-shrink: 0;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start;
+  justify-content: flex-start;
   width: 65px;
   height: 65px;
   border-radius: 20px;
@@ -5146,7 +5146,7 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .te-info-card .content .te-read-more .te-theme-btn {
@@ -8426,7 +8426,7 @@ body.admin-bar .te-header-menu-area.te-sticky_menu {
   justify-content: space-between;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 60px;
   gap: 24px;
 }
