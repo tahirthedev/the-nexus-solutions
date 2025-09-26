@@ -1,4 +1,5 @@
 "use client";
+import { Phone } from "lucide-react";
 import { useState } from "react";
 
 export default function FloatingSheetButton() {
@@ -16,7 +17,7 @@ export default function FloatingSheetButton() {
         <div
           onClick={() => setOpen(false)}
           style={{
-            position: "fixed", 
+            position: "fixed",
             top: 0,
             left: 0,
             width: "100vw",
@@ -31,7 +32,7 @@ export default function FloatingSheetButton() {
       <div
         style={{
           position: "fixed",
-          padding:"10px 0px",
+          padding: "10px 0px",
           top: "50%",
           right: 0,
           height: `${sheetHeight}px`,
@@ -126,7 +127,7 @@ export default function FloatingSheetButton() {
               width: `${buttonWidth}px`,
               height: "230px", // smaller button height
               background: "#02c173",
-              lineHeight:"10px",
+              lineHeight: "10px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -143,12 +144,36 @@ export default function FloatingSheetButton() {
                 fontWeight: "700",
                 color: "#fff",
                 fontSize: "14px",
-               
+
                 whiteSpace: "nowrap",
                 letterSpacing: "4px",
               }}
             >
               LET'S GET STARTED
+            </span>
+          </div>
+
+          <div
+            onClick={() => alert("Phone Clicked!")}
+            style={{
+              position: "absolute",
+              left: `-${buttonWidth}px`,
+              top: "calc(50% + 120px)", // place below the first button (230px/2 = 115 + small gap)
+              transform: "translateY(0)",
+              width: `${buttonWidth}px`,
+              height: `${buttonHeight}px`,
+              background: "#02b869",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              cursor: "pointer",
+              borderRadius: "5px 0 0 5px",
+              boxShadow: "0 0 20px #00000026",
+            }}
+          >
+            {/* Phone Icon (can replace with any icon library) */}
+            <span style={{ color: "#fff", fontSize: "20px" }}>
+              <Phone className="text-white"/>
             </span>
           </div>
         </div>
