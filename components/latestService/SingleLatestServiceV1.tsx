@@ -6,13 +6,14 @@ import Image from "next/image";
 
 type itemData = {
     id: number;
+    slug: string;
     thumb: string;
     title: string;
     text: string;
 }
 
 const SingleLatestServiceV1 = ({ item, index } : { item: itemData; index: number }) => {
-    const { id, thumb, title, text } = item
+    const { id, slug, thumb, title, text } = item
 
     const delay = index * 0.2;
 
@@ -37,13 +38,13 @@ const SingleLatestServiceV1 = ({ item, index } : { item: itemData; index: number
                         />
                     </div>
                     <div className="title-wrapper">
-                        <h3 className="title"><Link href={`/service-details/${id}`}>{title}</Link></h3>
+                        <h3 className="title"><Link href={`/service-details/${slug}`}>{title}</Link></h3>
                     </div>
                     <div className="content">
                         <p className="desc">{text}</p>
                     </div>
                 </div>
-                <Link href={`/service-details/${id}`} className="btn-wrapper">
+                <Link href={`/service-details/${slug}`} className="btn-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" width="67" height="16"
                          viewBox="0 0 67 16" fill="none">
                         <path
