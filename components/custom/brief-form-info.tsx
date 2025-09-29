@@ -4,6 +4,7 @@ import Link from "next/link"
 import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
+import { submitBriefForm } from "@/app/actions"
 
 
 type YesNo = "yes" | "no"
@@ -49,47 +50,16 @@ export function BriefForm() {
       Object.entries(yesNoValues).forEach(([key, value]) => {
         form.set(key, value)
       })
-      console.log("[v0] Brief form submitted payload:", Object.fromEntries(form.entries()))
-      console.log("[DEBUG] About to send fetch to Formspree")
-      const response = await fetch('https://formspree.io/f/xkgqjkwd', {
-        method: 'POST',
-        body: form,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      console.log("[DEBUG] Fetch response status:", response.status, "ok:", response.ok, "statusText:", response.statusText)
-      if (response.ok) {
-        const responseText = await response.text()
-        console.log("[SUCCESS] Form submitted to Formspree successfully, response:", responseText)
-        try {
-          const responseJson = JSON.parse(responseText)
-          console.log("[DEBUG] Parsed response JSON:", responseJson)
-          if (responseJson.ok) {
-            console.log("[DEBUG] Formspree confirms submission was successful")
-          } else {
-            console.warn("[WARN] Formspree response indicates issue:", responseJson)
-          }
-        } catch (parseError) {
-          console.log("[DEBUG] Response is not JSON, raw text:", responseText)
-        }
-        alert("Form submitted successfully!")
-        // Reset form if needed
-        if (e.currentTarget) {
-          e.currentTarget.reset()
-        }
-        setYesNoValues({})
-      } else {
-        const responseText = await response.text()
-        console.error("[ERROR] Formspree submission failed:", response.status, response.statusText, "Response body:", responseText)
-        try {
-          const errorJson = JSON.parse(responseText)
-          console.error("[DEBUG] Parsed error response:", errorJson)
-        } catch (parseError) {
-          console.log("[DEBUG] Error response is not JSON, raw text:", responseText)
-        }
-        alert("Form submission failed. Please try again.")
+      console.log("[CLIENT] Brief form submitted payload:", Object.fromEntries(form.entries()))
+      console.log("[CLIENT] Calling server action submitBriefForm")
+      const result = await submitBriefForm(form)
+      console.log("[CLIENT] Server action result:", result)
+      alert("Form submitted successfully!")
+      // Reset form if needed
+      if (e.currentTarget) {
+        e.currentTarget.reset()
       }
+      setYesNoValues({})
     } catch (error) {
       console.error("[ERROR] Error submitting form:", error instanceof Error ? error.message : error, error instanceof Error ? error.stack : '')
       alert("An error occurred while submitting the form.")
