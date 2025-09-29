@@ -7,7 +7,7 @@ export async function submitLogoBrief(formData: FormData) {
   try {
     const response = await fetch('https://formspree.io/f/mrbyprdw', {
       method: 'POST',
-      body: formData,
+      body: formData, 
       headers: {
         'Accept': 'application/json'
       }
