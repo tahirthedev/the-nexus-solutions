@@ -17,7 +17,7 @@ export async function submitLogoBrief(formData: FormData) {
     }
     console.log('[SERVER ACTION] Fetch options prepared')
 
-    const response = await fetch('https://formspree.io/f/xkgqjkdp', fetchOptions)
+    const response = await fetch('https://formspree.io/f/mvgwklkw', fetchOptions)
     console.log('[SERVER ACTION] Fetch completed')
     console.log('[SERVER ACTION] Formspree response status:', response.status, 'ok:', response.ok)
     console.log('[SERVER ACTION] Response headers:', Object.fromEntries(response.headers.entries()))
