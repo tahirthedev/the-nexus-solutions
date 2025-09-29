@@ -5,7 +5,7 @@ export async function submitLogoBrief(formData: FormData) {
   console.log('[SERVER ACTION] Form data:', Object.fromEntries(formData.entries()))
 
   try {
-    const response = await fetch('https://formspree.io/f/mrbyprdw', {
+    const response = await fetch('https://formspree.io/f/xkgqjkdp', {
       method: 'POST',
       body: formData, 
       headers: {
