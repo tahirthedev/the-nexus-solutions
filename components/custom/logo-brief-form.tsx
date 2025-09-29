@@ -306,7 +306,7 @@ export function LogoBriefForm() {
                             <p style={{marginTop:"15px"}}>Once this design questionaire is completed, simply just hit the submit button below.</p>
                             <p>One of our team member will contact you shortly. Please feel free to contact us in case of any confusion. We are committed to working with you to provide a professional identity that increases your brand equity and enhances the value proposition of your products/services.</p>
                             <p>Disclaimer: The following information will strictly be used for order fulfillment, and to have a clear understanding of your business; it will not be distributed to any third party/service vendor. Your input is valuable to us, and we strongly encourage you to describe in detail to the best of your ability. However, we will be corresponding with you at every step of the process even after receiving this document as a logo varies enormously in appearance. Any future alterations to the following specifications will be subject to additional charges. Carefully submit your details as it would be the building block for our design work. Feel free to leave fields blank if not applicable. In case of any concerns that you would like to discuss over the phone related to this form, call us at
-                                020 4592 1183</p>
+                            (682) 428-9881</p>
                             <p>NOTE: After design approval, no refunds will be applicable.</p>
                         </div>
 
