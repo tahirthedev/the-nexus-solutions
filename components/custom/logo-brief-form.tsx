@@ -36,12 +36,59 @@ export function LogoBriefForm() {
 
     async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
+        if (submitting) {
+            console.log("[DEBUG] Submission already in progress, ignoring")
+            return
+        }
+        console.log("[DEBUG] Starting form submission")
         setSubmitting(true)
         try {
             const form = new FormData(e.currentTarget)
-            console.log("[v0] Brief form submitted sample payload:", Object.fromEntries(form.entries()))
-            alert("Form prepared. Connect a server action to save responses.")
+            console.log("[v0] Logo brief form submitted payload:", Object.fromEntries(form.entries()))
+            console.log("[DEBUG] About to send fetch to Formspree")
+            const response = await fetch('https://formspree.io/f/xkgqjkwd', {
+                method: 'POST',
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            console.log("[DEBUG] Fetch response status:", response.status, "ok:", response.ok, "statusText:", response.statusText)
+            if (response.ok) {
+                const responseText = await response.text()
+                console.log("[SUCCESS] Form submitted to Formspree successfully, response:", responseText)
+                try {
+                    const responseJson = JSON.parse(responseText)
+                    console.log("[DEBUG] Parsed response JSON:", responseJson)
+                    if (responseJson.ok) {
+                        console.log("[DEBUG] Formspree confirms submission was successful")
+                    } else {
+                        console.warn("[WARN] Formspree response indicates issue:", responseJson)
+                    }
+                } catch (parseError) {
+                    console.log("[DEBUG] Response is not JSON, raw text:", responseText)
+                }
+                alert("Form submitted successfully!")
+                // Reset form if needed
+                if (e.currentTarget) {
+                    e.currentTarget.reset()
+                }
+            } else {
+                const responseText = await response.text()
+                console.error("[ERROR] Formspree submission failed:", response.status, response.statusText, "Response body:", responseText)
+                try {
+                    const errorJson = JSON.parse(responseText)
+                    console.error("[DEBUG] Parsed error response:", errorJson)
+                } catch (parseError) {
+                    console.log("[DEBUG] Error response is not JSON, raw text:", responseText)
+                }
+                alert("Form submission failed. Please try again.")
+            }
+        } catch (error) {
+            console.error("[ERROR] Error submitting form:", error instanceof Error ? error.message : error, error instanceof Error ? error.stack : '')
+            alert("An error occurred while submitting the form.")
         } finally {
+            console.log("[DEBUG] Submission finished")
             setSubmitting(false)
         }
     }
@@ -143,29 +190,29 @@ export function LogoBriefForm() {
                         <input id="client_name" name="client_name" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
                     </div>
                     <div className="form-field">
-                        <label htmlFor="date" style={{ marginBottom: '10px' }}>Contact Person</label>
-                        <input id="date" name="date" type="text" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
+                        <label htmlFor="contact_person" style={{ marginBottom: '10px' }}>Contact Person</label>
+                        <input id="contact_person" name="contact_person" type="text" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
                     </div>
                 </div>
 
                 <div className="two-col" style={{ padding: "20px" }}>
                     <div className="form-field">
-                        <label htmlFor="client_name" style={{ marginBottom: '10px' }}>Address</label>
-                        <input id="Address" name="Address" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
+                        <label htmlFor="address" style={{ marginBottom: '10px' }}>Address</label>
+                        <input id="address" name="address" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
                     </div>
                     <div className="form-field">
-                        <label htmlFor="signature" style={{ marginBottom: '10px' }}>phone</label>
-                        <input id="signature" name="signature" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
+                        <label htmlFor="phone" style={{ marginBottom: '10px' }}>phone</label>
+                        <input id="phone" name="phone" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
                     </div>
                 </div>
                 <div className="two-col" style={{ padding: "20px" }}>
                     <div className="form-field">
-                        <label htmlFor="client_name" style={{ marginBottom: '10px' }}>Email</label>
-                        <input id="Address" name="Address" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
+                        <label htmlFor="email" style={{ marginBottom: '10px' }}>Email</label>
+                        <input id="email" name="email" type="email" required style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
                     </div>
                     <div className="form-field">
-                        <label htmlFor="signature" style={{ marginBottom: '10px' }}>Website address</label>
-                        <input id="signature" name="signature" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
+                        <label htmlFor="website" style={{ marginBottom: '10px' }}>Website address</label>
+                        <input id="website" name="website" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
                     </div>
                 </div>
             </div>
@@ -178,8 +225,8 @@ export function LogoBriefForm() {
                 <div className="card-grid" style={{ padding: '20px' }}>
                     <div className="two-col">
                         <div className="form-field">
-                            <label htmlFor="business_name" style={{ marginBottom: '10px' }}>What is the Name of the company that will appear on the Logo?</label>
-                            <input id="" name="" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <label htmlFor="company_name" style={{ marginBottom: '10px' }}>What is the Name of the company that will appear on the Logo?</label>
+                            <input id="company_name" name="company_name" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                         <div className="form-field">
                             <label htmlFor="slogan" style={{ marginBottom: '10px' }}>Are there any tagline/slogan associated with the logo?</label>
@@ -188,38 +235,38 @@ export function LogoBriefForm() {
                     </div>
                     <div className="two-col">
                         <div className="form-field">
-                            <label htmlFor="business_name" style={{ marginBottom: '10px' }}>Please give us a brief overview of your company. What are your services? What you do or produce?</label>
-                            <input id="" name="" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <label htmlFor="company_overview" style={{ marginBottom: '10px' }}>Please give us a brief overview of your company. What are your services? What you do or produce?</label>
+                            <input id="company_overview" name="company_overview" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                         <div className="form-field">
-                            <label htmlFor="slogan" style={{ marginBottom: '10px' }}>Who are your target audience/typical customer?</label>
-                            <input id="slogan" name="slogan" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <label htmlFor="target_audience" style={{ marginBottom: '10px' }}>Who are your target audience/typical customer?</label>
+                            <input id="target_audience" name="target_audience" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                     </div>
                     <div className="two-col">
                         <div className="form-field">
-                            <label htmlFor="business_name" style={{ marginBottom: '10px' }}>What sort of style do you envision? (E.g. professional, modern and clean, old world, cutting edge, vintage, sporty, futuristic, High etc.)</label>
-                            <input id="" name="" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <label htmlFor="style_vision" style={{ marginBottom: '10px' }}>What sort of style do you envision? (E.g. professional, modern and clean, old world, cutting edge, vintage, sporty, futuristic, High etc.)</label>
+                            <input id="style_vision" name="style_vision" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                         <div className="form-field">
-                            <label htmlFor="slogan" style={{ marginBottom: '10px' }}>Please provide some adjectives that describe what you hope to communicate with your logo ?</label>
-                            <input id="slogan" name="slogan" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <label htmlFor="adjectives" style={{ marginBottom: '10px' }}>Please provide some adjectives that describe what you hope to communicate with your logo ?</label>
+                            <input id="adjectives" name="adjectives" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                     </div>
 
                     <div className="two-col">
                         <div className="form-field">
-                            <label htmlFor="business_name" style={{ marginBottom: '10px' }}>Are the any ideas that you like to use for the logo (or) you are open to ideas? Ideas, icons, images or symbols
+                            <label htmlFor="logo_ideas" style={{ marginBottom: '10px' }}>Are the any ideas that you like to use for the logo (or) you are open to ideas? Ideas, icons, images or symbols
                             </label>
-                            <input id="" name="" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <input id="logo_ideas" name="logo_ideas" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                         <div className="form-field">
-                            <label htmlFor="slogan" style={{ marginBottom: '10px' }}>Do you have any particular images or symbols you associate with your product or company? (E.g. favorite animal or object, like a lion, ship, mountain or tree.)</label>
-                            <input id="" name="" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <label htmlFor="symbols" style={{ marginBottom: '10px' }}>Do you have any particular images or symbols you associate with your product or company? (E.g. favorite animal or object, like a lion, ship, mountain or tree.)</label>
+                            <input id="symbols" name="symbols" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                         <div className="form-field full-span">
-                            <label htmlFor="slogan" style={{ marginBottom: '10px' }}>What are your color preferences?</label>
-                            <input id="" name="" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
+                            <label htmlFor="color_preferences" style={{ marginBottom: '10px' }}>What are your color preferences?</label>
+                            <input id="color_preferences" name="color_preferences" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: "40px" }} />
                         </div>
                     </div>
 
@@ -300,7 +347,7 @@ export function LogoBriefForm() {
                             Please provide any information, which you think we might need to know, which hasn’t been covered in your answers?
                         </p>
                         <div className="form-field full-span" style={{ width: '100%' }}>
-                            <textarea id="" name="principal_purpose" style={{ border: '0.5px solid #02C173', background: 'transparent', borderRadius: '4px', width: '100%', minHeight: '40px', flex: 1, color: 'white', padding: '10px 0px' }} />
+                            <textarea id="additional_info" name="additional_info" style={{ border: '0.5px solid #02C173', background: 'transparent', borderRadius: '4px', width: '100%', minHeight: '40px', flex: 1, color: 'white', padding: '10px 0px' }} />
                         </div>
                         <div style={{display:"flex", flexDirection:"column", gap:"20px"}}>
                             <p style={{marginTop:"15px"}}>Once this design questionaire is completed, simply just hit the submit button below.</p>
