@@ -61,7 +61,8 @@ export default function PrivacyPolicy() {
           <strong>Email:</strong> <a href="mailto:info@thenexusdigitals.com">info@thenexusdigitals.com</a>
         </p>
         <p>We will investigate any complaints received in writing and do our best to resolve them with you as soon as possible.</p>
-
+        <h2>include this language in your privacy policy</h2>
+        <p>No mobile information will be shared with third parties/affiliates for marketing/promotional purposes</p>
         <div className="footer-note">
           <p>The Nexus Digitals Footer Logo</p>
           <p>Unlocking Digital Prowess through Innovative Solutions and Unparalleled Customer Service.</p>

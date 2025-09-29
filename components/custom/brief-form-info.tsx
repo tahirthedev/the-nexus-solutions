@@ -33,15 +33,68 @@ function YesNoField({
 
 export function BriefForm() {
   const [submitting, setSubmitting] = useState(false)
+  const [yesNoValues, setYesNoValues] = useState<Record<string, YesNo>>({})
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    if (submitting) {
+      console.log("[DEBUG] Submission already in progress, ignoring")
+      return
+    }
+    console.log("[DEBUG] Starting form submission")
     setSubmitting(true)
     try {
       const form = new FormData(e.currentTarget)
-      console.log("[v0] Brief form submitted sample payload:", Object.fromEntries(form.entries()))
-      alert("Form prepared. Connect a server action to save responses.")
+      // Add yes/no values to form data
+      Object.entries(yesNoValues).forEach(([key, value]) => {
+        form.set(key, value)
+      })
+      console.log("[v0] Brief form submitted payload:", Object.fromEntries(form.entries()))
+      console.log("[DEBUG] About to send fetch to Formspree")
+      const response = await fetch('https://formspree.io/f/xkgqjkwd', {
+        method: 'POST',
+        body: form,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      console.log("[DEBUG] Fetch response status:", response.status, "ok:", response.ok, "statusText:", response.statusText)
+      if (response.ok) {
+        const responseText = await response.text()
+        console.log("[SUCCESS] Form submitted to Formspree successfully, response:", responseText)
+        try {
+          const responseJson = JSON.parse(responseText)
+          console.log("[DEBUG] Parsed response JSON:", responseJson)
+          if (responseJson.ok) {
+            console.log("[DEBUG] Formspree confirms submission was successful")
+          } else {
+            console.warn("[WARN] Formspree response indicates issue:", responseJson)
+          }
+        } catch (parseError) {
+          console.log("[DEBUG] Response is not JSON, raw text:", responseText)
+        }
+        alert("Form submitted successfully!")
+        // Reset form if needed
+        if (e.currentTarget) {
+          e.currentTarget.reset()
+        }
+        setYesNoValues({})
+      } else {
+        const responseText = await response.text()
+        console.error("[ERROR] Formspree submission failed:", response.status, response.statusText, "Response body:", responseText)
+        try {
+          const errorJson = JSON.parse(responseText)
+          console.error("[DEBUG] Parsed error response:", errorJson)
+        } catch (parseError) {
+          console.log("[DEBUG] Error response is not JSON, raw text:", responseText)
+        }
+        alert("Form submission failed. Please try again.")
+      }
+    } catch (error) {
+      console.error("[ERROR] Error submitting form:", error instanceof Error ? error.message : error, error instanceof Error ? error.stack : '')
+      alert("An error occurred while submitting the form.")
     } finally {
+      console.log("[DEBUG] Submission finished")
       setSubmitting(false)
     }
   }
@@ -105,6 +158,10 @@ export function BriefForm() {
             <label htmlFor="date" style={{ marginBottom: '10px' }}>Date</label>
             <input id="date" name="date" type="date" style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px' , height: '40px' }} />
           </div>
+          <div className="form-field">
+            <label htmlFor="email" style={{ marginBottom: '10px' }}>Email</label>
+            <input id="email" name="email" type="email" required style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px', height: '40px' }} />
+          </div>
           <div className="form-field full-span">
             <label htmlFor="signature" style={{ marginBottom: '10px' }}>Signature</label>
             <input id="signature" name="signature"  style={{ border: '1px solid #02C173', color: 'white', padding: '10px 20px' , height: '40px' }} />
@@ -123,7 +180,7 @@ export function BriefForm() {
               <label>Do you have a Logo for the Business?</label>
               <div className="hint-text">Upload later is fine.</div>
             </div>
-            <YesNoField name="has_logo" value={undefined} onChange={() => { }} />
+            <YesNoField name="has_logo" value={yesNoValues.has_logo} onChange={(v) => setYesNoValues(prev => ({...prev, has_logo: v}))} />
           </div>
 
           <div className="two-col">
@@ -205,7 +262,7 @@ export function BriefForm() {
                 <label style={{ marginBottom: '10px' }}>Do you need a CMS (Content Management System) to edit the content of the content pages like (About us, Privacy policy, FAQ etc.)?</label>
               </div>
               <div style={{ width: '120px' }}>
-                <YesNoField name="needs_cms" value={undefined} onChange={() => { }} />
+                <YesNoField name="needs_cms" value={yesNoValues.needs_cms} onChange={(v) => setYesNoValues(prev => ({...prev, needs_cms: v}))} />
               </div>
             </div>
             <div className="" style={{ display: 'flex', alignItems: 'start', flexDirection: "column", gap: "10px", minHeight: '120px' }}>
@@ -213,7 +270,7 @@ export function BriefForm() {
                 <label style={{ marginBottom: '10px' }}>SSL Integration required?</label>
               </div>
               <div style={{ width: '120px' }}>
-                <YesNoField name="ssl_required" value={undefined} onChange={() => { }} />
+                <YesNoField name="ssl_required" value={yesNoValues.ssl_required} onChange={(v) => setYesNoValues(prev => ({...prev, ssl_required: v}))} />
               </div>
             </div>
           </div>
@@ -248,7 +305,7 @@ export function BriefForm() {
                 {modules.map(module => (
                   <tr key={module.key}>
                     <td style={{ border: '1px solid #02C173', padding: '8px', color: 'white', textAlign: 'left' }}>{module.label}</td>
-                    <td style={{ border: '1px solid #02C173', padding: '8px', textAlign: 'left' }}><YesNoField name={`${module.key}_required`} value={undefined} onChange={() => { }} /></td>
+                    <td style={{ border: '1px solid #02C173', padding: '8px', textAlign: 'left' }}><YesNoField name={`${module.key}_required`} value={yesNoValues[`${module.key}_required`]} onChange={(v) => setYesNoValues(prev => ({...prev, [`${module.key}_required`]: v}))} /></td>
                     <td style={{ border: '1px solid #02C173', padding: '8px', textAlign: 'left', verticalAlign: 'middle' }}><textarea name={`${module.key}_feedback`} style={{ border: '1px solid #02C173', background: 'transparent', borderRadius: '4px', width: '100%', minHeight: '60px', color: 'white', resize: 'vertical', padding: '10px 20px', boxSizing: 'border-box' }} /></td>
                   </tr>
                 ))}
