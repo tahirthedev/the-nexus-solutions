@@ -24,6 +24,12 @@ interface EmailOptions {
 
 export const sendEmail = async ({ to, subject, html, from }: EmailOptions) => {
   try {
+    console.log('[EMAIL SERVICE] Attempting to send email...');
+    console.log('[EMAIL SERVICE] SMTP_HOST:', process.env.SMTP_HOST);
+    console.log('[EMAIL SERVICE] SMTP_PORT:', process.env.SMTP_PORT);
+    console.log('[EMAIL SERVICE] SMTP_USER:', process.env.SMTP_USER ? 'Set' : 'Not set');
+    console.log('[EMAIL SERVICE] SMTP_PASS:', process.env.SMTP_PASS ? 'Set' : 'Not set');
+    
     const transporter = createTransporter();
     
     const mailOptions = {
@@ -33,11 +39,23 @@ export const sendEmail = async ({ to, subject, html, from }: EmailOptions) => {
       html,
     };
 
+    console.log('[EMAIL SERVICE] Sending email with options:', {
+      from: mailOptions.from,
+      to: mailOptions.to,
+      subject: mailOptions.subject
+    });
+
     const result = await transporter.sendMail(mailOptions);
-    console.log('Email sent successfully:', result.messageId);
+    console.log('[EMAIL SERVICE] Email sent successfully:', result.messageId);
     return { success: true, messageId: result.messageId };
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('[EMAIL SERVICE] Error sending email:', error);
+    console.error('[EMAIL SERVICE] Error details:', {
+      name: error instanceof Error ? error.name : 'Unknown',
+      message: error instanceof Error ? error.message : 'Unknown error',
+      code: (error as any)?.code,
+      response: (error as any)?.response
+    });
     throw error;
   }
 };
