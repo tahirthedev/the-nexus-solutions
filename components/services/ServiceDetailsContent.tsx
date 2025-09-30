@@ -414,7 +414,7 @@ const ServiceDetailsContent = ({ serviceSlug, serviceData }: ServiceDetailsConte
                                         <li><Link href="/service-details/creative-copywriting" className={serviceSlug === 'creative-copywriting' ? 'active' : ''}>Creative Copywriting</Link></li>
                                     </ul>
                                 </div>
-                                <Link href="#" className="pdf-download-btn">
+                                <a  href="/pdf/websites.pdf"  download className="pdf-download-btn">
                                     <div className="icon">
                                         <i className="fa-solid fa-file-pdf"></i>
                                     </div>
@@ -425,7 +425,7 @@ const ServiceDetailsContent = ({ serviceSlug, serviceData }: ServiceDetailsConte
                                     <div className="download-icon">
                                         <i className="fa-solid fa-arrow-down"></i>
                                     </div>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

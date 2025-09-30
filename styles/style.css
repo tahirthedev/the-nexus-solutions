@@ -12039,48 +12039,43 @@ ul.children {
   background-color: #121212;
   padding: 25px 40px;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .pdf-download-btn {
-    padding: 20px 30px;
-  }
+/* Hover effect for the whole button */
+.pdf-download-btn:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
+/* Icon */
 .pdf-download-btn .icon {
   width: 54px;
   height: 54px;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   background-color: #02C173;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-size: 25px;
   color: #14203A;
+  transition: transform 0.3s ease;
 }
 
+/* Animate icon on hover */
+.pdf-download-btn:hover .icon {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+/* Content */
 .pdf-download-btn .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -12100,9 +12095,41 @@ ul.children {
   color: #ffffffcc;
 }
 
+/* Download arrow */
 .pdf-download-btn .download-icon {
   margin-left: auto;
+  font-size: 20px;
+  color: #ffffffcc;
 }
+
+.pdf-download-btn .download-icon i {
+  transition: transform 0.3s ease;
+}
+
+/* Animate arrow on hover (bouncing down) */
+.pdf-download-btn:hover .download-icon i {
+  animation: bounceDown 0.6s infinite;
+}
+
+@keyframes bounceDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .pdf-download-btn {
+    padding: 20px 30px;
+  }
+}
+
+
+
+
+
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .te-service-details-wrapper {
@@ -14468,4 +14495,464 @@ brief form component css */
   font-size:13px;
 }
 
+/*service pdf button downloader css */
+ 
 
+/* Website Brief Form Styles */
+
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.active-link {
+  color: #007bff;
+}
+
+.join-hub-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container {
+  padding: 20px 0;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.client-info {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.form-header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.project-details-bar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-tag {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.two-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.two-columns > div {
+  flex: 1;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.radio-group-row {
+  display: flex;
+  align-items: center;
+}
+
+.radio-options {
+  margin-left: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.two-columns-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-title {
+  flex: 1;
+  text-align: center;
+}
+
+.last-section {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.form-footer-placeholder {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
+/* Brief Form Styles */
+
+/* Form wrapper */
+.brief-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Card styles */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* Layout classes */
+.two-col {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.two-col > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 500;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #02C173;
+  background: transparent;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-field textarea {
+  min-height: 40px;
+  resize: vertical;
+}
+
+/* Field row for yes/no */
+.field-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  min-height: 120px;
+}
+
+.field-label {
+  flex: 1;
+}
+
+.field-label label {
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+  font-weight: 500;
+}
+
+.hint-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 5px;
+}
+
+/* Yes/No field */
+.yesno-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+}
+
+/* Checkbox group */
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.checkbox-option input[type="checkbox"] {
+  margin: 0;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #02C173;
+  padding: 8px;
+  text-align: left;
+  color: white;
+}
+
+table th {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Agreement note */
+.agreement-note {
+  font-size: 17px;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Submit row */
+.submit-row {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submit-row button {
+  background: #02C173;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-row button:hover {
+  background: #019c5f;
+}
+
+.submit-row button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+/* Full span */
+.full-span {
+  grid-column: 1 / -1;
+}
+
+/* Logo grid */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.logo-grid > div {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.logo-grid img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Page container */
+.page-container {
+  min-height: 100vh;
+  background: #000;
+}
+
+/* Form section */
+.form-section {
+  padding: 40px 20px;
+}
+
+/* Footer */
+.footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contact {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #02C173;
+  text-decoration: none;
+}
+
+.footer-address {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+}
