@@ -1,45 +1,49 @@
 'use server'
 
+import { sendEmail, generateLogoBriefEmailTemplate, generateWebsiteBriefEmailTemplate } from '@/lib/email';
+
 export async function submitLogoBrief(formData: FormData) {
-  console.log('[SERVER ACTION] Starting form submission to Formspree')
+  console.log('[SERVER ACTION] Starting logo brief form submission')
   console.log('[SERVER ACTION] Environment:', process.env.NODE_ENV)
   console.log('[SERVER ACTION] Form data keys:', Array.from(formData.keys()))
-  console.log('[SERVER ACTION] Form data entries count:', formData.getAll('email').length > 0 ? 'Has email' : 'No email')
+  console.log('[SERVER ACTION] SMTP_HOST:', process.env.SMTP_HOST ? 'Set' : 'Not set')
+  console.log('[SERVER ACTION] SMTP_USER:', process.env.SMTP_USER ? 'Set' : 'Not set')
 
   try {
-    console.log('[SERVER ACTION] Preparing fetch to Formspree')
-    const fetchOptions = {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
+    // Check if email environment variables are configured
+    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.warn('[SERVER ACTION] Email environment variables not configured, falling back to Formspree')
+      
+      // Fallback to Formspree if email env vars not set
+      const response = await fetch('https://formspree.io/f/mvgwklkw', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Formspree submission failed: ${response.status}`);
       }
-    }
-    console.log('[SERVER ACTION] Fetch options prepared')
 
-    const response = await fetch('https://formspree.io/f/mvgwklkw', fetchOptions)
-    console.log('[SERVER ACTION] Fetch completed')
-    console.log('[SERVER ACTION] Formspree response status:', response.status, 'ok:', response.ok)
-    console.log('[SERVER ACTION] Response headers:', Object.fromEntries(response.headers.entries()))
-
-    if (!response.ok) {
-      const errorText = await response.text()
-      console.error('[SERVER ACTION] Formspree submission failed:', response.status, response.statusText, 'Response:', errorText)
-      console.error('[SERVER ACTION] Full response details:', {
-        status: response.status,
-        statusText: response.statusText,
-        headers: Object.fromEntries(response.headers.entries()),
-        body: errorText
-      })
-      throw new Error(`Formspree submission failed: ${response.status} ${response.statusText}`)
+      console.log('[SERVER ACTION] Logo brief form submitted successfully via Formspree')
+      return { success: true, message: 'Logo brief form submitted successfully' }
     }
 
-    const responseText = await response.text()
-    console.log('[SERVER ACTION] Formspree submission successful, response:', responseText)
+    // Send email with form data
+    const emailHtml = generateLogoBriefEmailTemplate(formData);
+    
+    await sendEmail({
+      to: 'info@thenexusdigitals.com',
+      subject: 'New Logo Brief Form Submission',
+      html: emailHtml,
+    });
 
-    return { success: true, message: 'Form submitted successfully' }
+    console.log('[SERVER ACTION] Logo brief email sent successfully to info@thenexusdigitals.com')
+    return { success: true, message: 'Logo brief form submitted successfully' }
   } catch (error) {
-    console.error('[SERVER ACTION] Error in server action:', error)
+    console.error('[SERVER ACTION] Error in logo brief submission:', error)
     console.error('[SERVER ACTION] Error type:', error instanceof Error ? error.constructor.name : typeof error)
     console.error('[SERVER ACTION] Error message:', error instanceof Error ? error.message : error)
     console.error('[SERVER ACTION] Error stack:', error instanceof Error ? error.stack : 'No stack')
@@ -48,45 +52,47 @@ export async function submitLogoBrief(formData: FormData) {
 }
 
 export async function submitBriefForm(formData: FormData) {
-  console.log('[SERVER ACTION] Starting brief form submission to Formspree')
+  console.log('[SERVER ACTION] Starting website brief form submission')
   console.log('[SERVER ACTION] Environment:', process.env.NODE_ENV)
   console.log('[SERVER ACTION] Form data keys:', Array.from(formData.keys()))
-  console.log('[SERVER ACTION] Form data entries count:', formData.getAll('email').length > 0 ? 'Has email' : 'No email')
+  console.log('[SERVER ACTION] SMTP_HOST:', process.env.SMTP_HOST ? 'Set' : 'Not set')
+  console.log('[SERVER ACTION] SMTP_USER:', process.env.SMTP_USER ? 'Set' : 'Not set')
 
   try {
-    console.log('[SERVER ACTION] Preparing fetch to Formspree')
-    const fetchOptions = {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
+    // Check if email environment variables are configured
+    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.warn('[SERVER ACTION] Email environment variables not configured, falling back to Formspree')
+      
+      // Fallback to Formspree if email env vars not set
+      const response = await fetch('https://formspree.io/f/xkgqjkwd', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Formspree submission failed: ${response.status}`);
       }
-    }
-    console.log('[SERVER ACTION] Fetch options prepared')
 
-    const response = await fetch('https://formspree.io/f/xkgqjkwd', fetchOptions)
-    console.log('[SERVER ACTION] Fetch completed')
-    console.log('[SERVER ACTION] Formspree response status:', response.status, 'ok:', response.ok)
-    console.log('[SERVER ACTION] Response headers:', Object.fromEntries(response.headers.entries()))
-
-    if (!response.ok) {
-      const errorText = await response.text()
-      console.error('[SERVER ACTION] Formspree submission failed:', response.status, response.statusText, 'Response:', errorText)
-      console.error('[SERVER ACTION] Full response details:', {
-        status: response.status,
-        statusText: response.statusText,
-        headers: Object.fromEntries(response.headers.entries()),
-        body: errorText
-      })
-      throw new Error(`Formspree submission failed: ${response.status} ${response.statusText}`)
+      console.log('[SERVER ACTION] Website brief form submitted successfully via Formspree')
+      return { success: true, message: 'Website brief form submitted successfully' }
     }
 
-    const responseText = await response.text()
-    console.log('[SERVER ACTION] Formspree submission successful, response:', responseText)
+    // Send email with form data
+    const emailHtml = generateWebsiteBriefEmailTemplate(formData);
+    
+    await sendEmail({
+      to: 'info@thenexusdigitals.com',
+      subject: 'New Website Brief Form Submission',
+      html: emailHtml,
+    });
 
-    return { success: true, message: 'Form submitted successfully' }
+    console.log('[SERVER ACTION] Website brief email sent successfully to info@thenexusdigitals.com')
+    return { success: true, message: 'Website brief form submitted successfully' }
   } catch (error) {
-    console.error('[SERVER ACTION] Error in server action:', error)
+    console.error('[SERVER ACTION] Error in website brief submission:', error)
     console.error('[SERVER ACTION] Error type:', error instanceof Error ? error.constructor.name : typeof error)
     console.error('[SERVER ACTION] Error message:', error instanceof Error ? error.message : error)
     console.error('[SERVER ACTION] Error stack:', error instanceof Error ? error.stack : 'No stack')
