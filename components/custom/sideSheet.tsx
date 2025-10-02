@@ -95,7 +95,7 @@ export default function FloatingSheetButton() {
             />
             <div className="input-group">
               <span className="input-group-text rounded-start border-end-0">
-                +92
+                +1
               </span>
               <input
                 type="tel"
